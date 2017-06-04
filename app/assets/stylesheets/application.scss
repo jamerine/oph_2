@@ -22,19 +22,85 @@ $primary_black: #2D2D2F;
 $primary_gray: #6B6B6B;
 $primary_white: #FFFFFF;
 
+
 body {
   font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  height: 100%;
 }
 
-.home-image {
-    background: image-url("old-man-making-healthy-crepes-in-open-air-market-picjumbo-com.jpg");
+#home {
+  .home-image {
+      background: image-url("old-man-making-healthy-crepes-in-open-air-market-picjumbo-com.jpg") center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 80vh;
+      color: $primary_yellow
+  }
+
+  .home-text-area {
+    background-color: transparent;
+  }
+
+  .home-row {
+    margin: auto;
+  }
+
+}
+
+#difference {
+
+  .jumbotron {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: transparent;
+  }
+
+  .difference-image {
+    height: 50px;
+  }
+
+}
+
+#traditional {
+  .traditional-image {
+    background: image-url("making-waffles-cutting-them-into-pieces-picjumbo-com.jpg") center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
     width: 100%;
-    min-height: 80vh;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    height: 50vh;
+    color: $primary_yellow
+  }
+  .traditional-container {
+    padding-left: 50px;
+  }
+
+  .est-image {
+    height: 75px;
+  }
+
+}
+
+#about {
+  .jumbotron {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: transparent;
+  }
+
+  .squiggly-lines {
+    height: 25px;
+  }
+
+}
+
+#locations {
+
+  #map {
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+      }
 }
