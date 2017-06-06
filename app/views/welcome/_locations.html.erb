@@ -1,13 +1,15 @@
-<section class-"locations" id="locations">
+<section class-"welcome-locations" id="welcome-locations">
   <div class="container-fluid">
     <div class="row">
-      <div class="col col-md-3">
+      <div class="col-12 col-md-6 col-lg-3">
         <div class="card">
           <div class="card-block">
             <h4 class="card-title">LOCATION:</h4>
-            <p class="card-text">The Original Pancake House</p>
-            <p class="card-text">1633 West Lane Ave.</p>
-            <p class="card-text">Upper Arlington, OH 43221</p>
+            <a href='#'>
+              <p class="card-text">The Original Pancake House</p>
+              <p class="card-text">1633 West Lane Ave.</p>
+              <p class="card-text">Upper Arlington, OH 43221</p>
+            </a>
             <br>
             <h4 class="card-title">HOURS:</h4>
             <p>Monday - Friday: 8 AM - 2 PM</p>
@@ -20,24 +22,24 @@
           </div>
         </div>
       </div>
-      <div class="col col-md-9">
+      <div class="col-12 col-md-6 col-lg-9">
         <div id="map"></div>
-        <!-- <script>
-      function initMap() {
-        var uluru = {lat: 40.0070885, lng: -83.0523673};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script> -->
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=<%= ENV["GOOGLE_MAPS_API_KEY"] %>&callback=initMap">
-    </script>
+          <script>
+            function initMap() {
+              var uluru = {lat: 40.0070885, lng: -83.0523673};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: uluru
+              });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+          }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqups4O-a_foQFE-IKbUrrmnUXZHFVwb8&callback=initMap">
+          </script>
       </div>
     </div>
   </div>
