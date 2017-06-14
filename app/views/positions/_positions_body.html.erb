@@ -8,7 +8,9 @@
 
   <div class="container positions-list-area">
     <% if @positions.empty? %>
-      <p>Unfortunately, there are no open positions at this time.  Please check back later!</p>
+      <div class="jumbotron text-center">
+        <h3>There are not any positions at this time!</h3>
+      </div>
     <% else %>
       <%= render 'positions_list', locals: { positions: @positions} %>
     <% end %>
