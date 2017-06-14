@@ -40,6 +40,12 @@ gem 'jquery-easing-rails'
 gem 'jquery-turbolinks'
 gem 'normalize-rails'
 
+# For weird errors
+gem 'rb-readline'
+
+# For application upload
+gem 'carrierwave', '~> 1.0'
+gem 'carrierwave-aws'
 
 
 

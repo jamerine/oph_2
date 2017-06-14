@@ -17,10 +17,48 @@
 //= require bootstrap-sprockets
 //= require_tree .
 
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
+
 };
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 };
+
+
+
+$(document).ready(function(){
+   var scroll_start = 0;
+   var startchange = $('#section-change');
+   var offset = startchange.offset();
+   offset.top = offset.top - 50
+    if (startchange.length){
+   $(document).scroll(function() {
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+         $(".navbar-fixed-top ").css('background-color', 'rgba(107, 107, 107, 0.75)');
+       } else {
+         $(".navbar-fixed-top ").css('background-color', 'transparent');
+       };
+
+   });
+    }
+
+    function initMap() {
+        var uluru = {lat: 40.0070885, lng: -83.0523673};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+    }
+
+
+
+
+});

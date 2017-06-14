@@ -1,0 +1,14 @@
+<%= render 'reviews_title' %>
+<div id="section-change">
+</div>
+<% if @reviews.empty? %>
+  <div class="container">
+    <br>
+    <div class="jumbotron text-center">
+      <h3>There are not any reviews at this time!</h3>
+    </div>
+  </div>
+
+<% else %>
+  <%= render 'reviews_list', locals: { reviews: @reviews } %>
+<% end %>

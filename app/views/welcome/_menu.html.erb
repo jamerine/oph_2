@@ -2,31 +2,36 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-md-4">
-        <div class="welcome-menu-item">
-          <%= link_to image_tag('joseph-gonzalez-111633.jpg', class: 'img-fluid rounded welcome-menu-item-image' ), '#'%>
-          <div class="caption">
-            <p class="text-uppercase">Strawberry Pancakes</p>
+        <%= link_to menus_path do %>
+          <div class="welcome-menu-item">
+              <%= image_tag('joseph-gonzalez-111633.jpg', class: 'img-fluid rounded welcome-menu-item-image' )%>
+              <div class="caption">
+                <p class="text-uppercase">Strawberry Pancakes</p>
+              </div>
           </div>
-        </div>
+        <% end %>
 
       </div>
       <div class="col-12 col-md-4">
-        <div class="welcome-menu-item">
-          <%= image_tag('joseph-gonzalez-176750.jpg', class: 'img-fluid rounded welcome-menu-item-image' )%>
-          <div class="caption">
-            <p class="text-uppercase">Chocolate Chip Pancakes</p>
+        <%= link_to menus_path do %>
+          <div class="welcome-menu-item">
+              <%= image_tag('joseph-gonzalez-176750.jpg', class: 'img-fluid rounded welcome-menu-item-image' )%>
+              <div class="caption">
+                <p class="text-uppercase">Chocolate Chip Pancakes</p>
+              </div>
           </div>
-        </div>
+        <% end %>
 
       </div>
       <div class="col-12 col-md-4">
-        <div class="welcome-menu-item">
-          <%= image_tag('joseph-gonzalez-192345.jpg', class: 'img-fluid rounded welcome-menu-item-image' )%>
-          <div class="caption">
-            <p class="text-uppercase">Fresh Fruit Crepes</p>
+          <div class="welcome-menu-item">
+            <%= link_to menus_path do %>
+              <%= image_tag('joseph-gonzalez-192345.jpg', class: 'img-fluid rounded welcome-menu-item-image' )%>
+              <div class="caption">
+                <p class="text-uppercase">Fresh Fruit Crepes</p>
+              </div>
+            <% end %>
           </div>
-
-        </div>
       </div>
     </div>
   </div>

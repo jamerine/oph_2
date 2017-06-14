@@ -1,0 +1,23 @@
+// Place all the styles related to the Comments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.new-comment-box .row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btn-comment-submit {
+  background-color: $primary_black;
+  color: $primary_white;
+  border-color: $primary_black;
+  border-radius: 3px;
+}
+
+.btn-comment-submit:hover {
+  background-color: $primary_white;
+  color: $primary_yellow;
+  border-color: $primary_yellow;
+  border-radius: 3px;
+}

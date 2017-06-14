@@ -1,0 +1,75 @@
+// Place all the styles related to the positions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#positions-title {
+  .positions-image {
+        background: image-url("giovanni-randisi-219945-1.jpg") center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 40vh;
+    }
+
+    h1 {
+      font-size: 72px;
+      letter-spacing: 1.5px;
+      font-weight: 800;
+      line-height: 150%;
+      color: $primary_yellow;
+    }
+}
+
+#positions-body {
+  .positions-intro {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  }
+
+  .positions-intro p {
+    color: $primary_gray;
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 400;
+  }
+
+  .positions-list-area {
+    padding-top: 25px;
+  }
+
+}
+
+#positions-list {
+
+  .position-list-header h4 {
+    color: $primary_gray;
+  }
+
+  .position-row {
+
+
+  }
+
+  .position_cell {
+    margin-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: .5px solid $primary_gray;
+  }
+
+  .btn-position-submit {
+    background-color: $primary_yellow;
+    color: $primary_black;
+    border-color: $primary_yellow;
+    border-radius: 3px;
+  }
+
+  .btn-position-submit:hover {
+    background-color: $primary_black;
+    color: $primary_white;
+    border-color: $primary_black;
+    border-radius: 3px;
+  }
+
+  padding-bottom: 50px;
+}

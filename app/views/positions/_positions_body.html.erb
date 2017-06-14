@@ -1,0 +1,17 @@
+<section class="positions-body", id="positions-body">
+  <div class="container">
+    <div class="positions-intro text-center">
+      <p>We're always looking for motivated individuals to join our growing team! If you have experience in customer service or in the kitchen, we'd love to hear from you! Browse our list of current career opportunties below! We look foward to hearing from you!</p>
+          <!-- <%= link_to 'Add New Position', new_position_path, class: 'btn btn-primary' %> -->
+    </div>
+  </div>
+
+  <div class="container positions-list-area">
+    <% if @positions.empty? %>
+      <p>Unfortunately, there are no open positions at this time.  Please check back later!</p>
+    <% else %>
+      <%= render 'positions_list', locals: { positions: @positions} %>
+    <% end %>
+  </div>
+
+</section>

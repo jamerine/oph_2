@@ -1,0 +1,42 @@
+<div class="container new-position-box">
+  <div class="jumbotron jumbotron-white">
+
+  <h3>Create New Position</h3>
+  <%= form_for @new_position do |f| %>
+    <div class="row">
+
+        <div class="form-group col-4">
+          <%= f.text_field :title, autofocus: true, class: "form-control", placeholder: "Title" %>
+        </div>
+
+        <div class="form-group col-4">
+          <%= f.text_field :location, autofocus: true, class: "form-control", placeholder: "Location (City, ST)"  %>
+        </div>
+
+        <div class="form-group col-4">
+          <%= f.text_field :position_type, autofocus: true, class: "form-control", placeholder: "Position Type"  %>
+        </div>
+
+        <div class="form-group col-12">
+          <%= f.text_area :description, autofocus: true, class: "form-control", placeholder: "Short Description", lines: 3  %>
+        </div>
+
+
+        <div class="form-group col-6">
+          <%= f.label :application_pdf %>
+          <%= f.file_field :application, class: 'form-control'  %>
+        </div>
+
+        <div class="form-group col-6">
+          <%= f.label :active %>
+          <%= f.check_box :active, autofocus: true, class: "form-control"%>
+        </div>
+      </div>
+
+        <div class="actions text-center">
+          <%= f.submit "SUBMIT", class: 'btn btn-primary btn-comment-submit' %>
+        </div>
+
+    <% end %>
+  </div>
+</div>
