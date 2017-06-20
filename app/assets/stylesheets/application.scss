@@ -141,15 +141,6 @@ hr {
 
     }
 
-    // .home-image:before {
-    //   content: '';
-    //   display: block;
-    //   position: absolute;
-    //   background: rgba(0,0,0,0.4);
-    //   width: 100%;
-    //   height: 80vh;
-    // }
-
   h1 {
     font-size: 72px;
     letter-spacing: 1.5px;
@@ -159,13 +150,33 @@ hr {
     position: relative;
   }
 
-  h2 {
+  .browse-menu {
     color: $primary_white;
     letter-spacing: 1px;
     font-size: 36px;
     letter-spacing: 1.5px;
     font-weight: 600;
     line-height: 150%;
+  }
+
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 42px;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+      line-height: 150%;
+      color: $primary_yellow;
+      position: relative;
+    }
+
+    .browse-menu {
+      color: $primary_white;
+      letter-spacing: 1px;
+      font-size: 24px;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+      line-height: 150%;
+    }
   }
 
 
@@ -223,6 +234,7 @@ hr {
 #welcome-locations {
 
   #map {
+    position: absolute;
         width: 100%;
         height: 100%;
     }
@@ -269,6 +281,7 @@ hr {
 }
 
 #welcome-reviews {
+
   height: 50vh;
   padding: 50px;
 
@@ -284,6 +297,27 @@ hr {
     letter-spacing: 1.5px;
     line-height: 150%;
     color: $primary_gray;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    height: 75vh;
+    padding: 50px;
+
+    .individual-review {
+      font-size: 24px;
+      letter-spacing: 1.5px;
+      line-height: 150%;
+      color: $primary_black;
+    }
+
+    .individual-reviewer {
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      line-height: 150%;
+      color: $primary_gray;
+    }
+
   }
 }
 
@@ -301,9 +335,6 @@ hr {
     font-size: 14px;
   }
 
-  .social-buttons {
-    margin-bottom: 0;
-  }
   .social-buttons a {
     display: block;
     background-color: $primary_gray;
@@ -327,5 +358,14 @@ hr {
   }
   .footer-social {
     flex-direction: row;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .social-buttons {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
   }
 }
