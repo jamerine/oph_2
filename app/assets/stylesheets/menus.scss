@@ -62,22 +62,20 @@
   }
 
   .menu-item {
-    padding: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 
-  @media screen and (max-width: 768px) {
-    .menu-item {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
 
-  }
 
 
   .menu-line {
     border-bottom: 2.5px solid $primary_yellow;
   }
 
+  .menu-collection {
+    margin-top: 50px;
+  }
 
 
 }
