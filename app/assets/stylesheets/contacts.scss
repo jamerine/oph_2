@@ -19,6 +19,18 @@
       line-height: 150%;
       color: $primary_yellow;
     }
+
+    @media screen and (max-width: 768px) {
+      .title-text {
+          font-size: 42px;
+          letter-spacing: 1.5px;
+          font-weight: 600;
+          line-height: 150%;
+          color: $primary_yellow;
+          position: relative;
+        }
+    }
+
 }
 
 #contact-body {
@@ -26,4 +38,35 @@
     margin-top: 50px;
     margin-bottom: 50px;
   }
+
+  @media screen and (max-width: 768px) {
+    .contact-question-box {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  }
+
+
+  .contact-location-box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .contact-location-box {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  }
+
+  .contact-title {
+    margin-bottom: 15px;
+  }
+
+  .contact-section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+
 }

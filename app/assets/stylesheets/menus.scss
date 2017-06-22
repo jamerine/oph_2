@@ -4,7 +4,7 @@
 
 
 
-#menu_title {
+#menu-title {
   .menu-image {
         background: image-url("giovanni-randisi-219945-1.jpg") center center;
         background-repeat: no-repeat;
@@ -22,6 +22,18 @@
       color: $primary_yellow;
     }
 
+    @media screen and (max-width: 768px) {
+      .title-text {
+          font-size: 42px;
+          letter-spacing: 1.5px;
+          font-weight: 600;
+          line-height: 150%;
+          color: $primary_yellow;
+          position: relative;
+        }
+    }
+
+
 }
 
 #menu-section {
@@ -37,14 +49,35 @@
     line-height: 150%;
   }
 
-  .menu-item {
-    padding: 15px;
+  @media screen and (max-width: 768px) {
+    h2 {
+      color: $primary_black;
+      letter-spacing: 1px;
+      font-size: 28px;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+    }
+
+
   }
 
+  .menu-item {
+    padding: 25px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .menu-item {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+  }
+
+
   .menu-line {
-    margin-top: 30px;
     border-bottom: 2.5px solid $primary_yellow;
   }
+
 
 
 }

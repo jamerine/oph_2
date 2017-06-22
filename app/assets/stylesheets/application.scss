@@ -25,6 +25,7 @@
   @import "bootstrap";
   @import "font-awesome";
   @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
+  @import "welcome";
   @import "menus";
   @import "about";
   @import "contacts";
@@ -129,38 +130,19 @@ hr {
   background-color: $primary_gray;
 }
 
-#home {
+
+.title-text {
+  font-size: 72px;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+  line-height: 150%;
+  color: $primary_yellow;
+  position: relative;
+}
 
 
-  .home-image {
-        background: image-url("old-man-making-healthy-crepes-in-open-air-market-picjumbo-com-1.jpg") center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 80vh;
-
-    }
-
-  h1 {
-    font-size: 72px;
-    letter-spacing: 1.5px;
-    font-weight: 800;
-    line-height: 150%;
-    color: $primary_yellow;
-    position: relative;
-  }
-
-  .browse-menu {
-    color: $primary_white;
-    letter-spacing: 1px;
-    font-size: 36px;
-    letter-spacing: 1.5px;
-    font-weight: 600;
-    line-height: 150%;
-  }
-
-  @media screen and (max-width: 768px) {
-    h1 {
+@media screen and (max-width: 768px) {
+  .title-text {
       font-size: 42px;
       letter-spacing: 1.5px;
       font-weight: 700;
@@ -168,212 +150,4 @@ hr {
       color: $primary_yellow;
       position: relative;
     }
-
-    .browse-menu {
-      color: $primary_white;
-      letter-spacing: 1px;
-      font-size: 24px;
-      letter-spacing: 1.5px;
-      font-weight: 600;
-      line-height: 150%;
-    }
-  }
-
-
-
-}
-
-#welcome-difference {
-
-  .jumbotron {
-    background-color: transparent;
-  }
-
-  .difference-image {
-    height: 100px;
-  }
-
-  .difference-media {
-    margin-top: 25px;
-    margin-bottom: 25px;
-  }
-
-}
-
-#welcome-traditional {
-  .traditional-image {
-    background: image-url("making-waffles-cutting-them-into-pieces-picjumbo-com-1.jpg") center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 50vh;
-    color: $primary_yellow;
-  }
-
-  .traditional-container {
-    padding-left: 50px;
-  }
-
-  .est-image {
-    height: 75px;
-  }
-
-}
-
-#welcome-about {
-  .jumbotron {
-    background-color: transparent;
-  }
-
-  .squiggly-lines {
-    height: 25px;
-  }
-
-}
-
-#welcome-locations {
-
-  #map {
-        width: 100%;
-        height: 100%;
-    }
-
-  @media screen and (max-width: 768px) {
-    #map {
-          width: 100%;
-          height: 50vh;
-      }
-  }
-}
-
-
-
-
-#welcome-pancakes {
-  .jumbotron {
-    background-color: transparent;
-  }
-
-  .squiggly-lines {
-    height: 25px;
-  }
-
-}
-
-
-#welcome-menu {
-  .welcome-menu-item {
-    margin: 25px;
-    position: relative;
-
-  }
-
-
-   .welcome-menu-item-image {
-     -webkit-filter: brightness(.75);
-     filter: brightness(.75);
-   }
-
-   .welcome-menu-item-image {
-     -webkit-filter: brightness(.75);
-     filter: brightness(.75);
-   }
-
-  .caption {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 100%;
-    color: $primary_white;
-  }
-}
-
-#welcome-reviews {
-
-  height: 50vh;
-  padding: 50px;
-
-  .individual-review {
-    font-size: 38px;
-    letter-spacing: 1.5px;
-    line-height: 150%;
-    color: $primary_black;
-  }
-
-  .individual-reviewer {
-    font-size: 18px;
-    letter-spacing: 1.5px;
-    line-height: 150%;
-    color: $primary_gray;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    height: 75vh;
-    padding: 50px;
-
-    .individual-review {
-      font-size: 24px;
-      letter-spacing: 1.5px;
-      line-height: 150%;
-      color: $primary_black;
-    }
-
-    .individual-reviewer {
-      font-size: 12px;
-      letter-spacing: 1.5px;
-      line-height: 150%;
-      color: $primary_gray;
-    }
-
-  }
-}
-
-
-
-
-////////// Carousel Example
-
-
-
-#welcome-footer {
-  margin-top: 25px;
-  .footer-p {
-    line-height: .25;
-    font-size: 14px;
-  }
-
-  .social-buttons a {
-    display: block;
-    background-color: $primary_gray;
-    height: 25px;
-    width: 25px;
-    border-radius: 100%;
-    font-size: 18px;
-    line-height: 25px;
-    color: white;
-    outline: none;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
-    margin: 5px;
-  }
-  .social-buttons a:hover,
-  .social-buttons a:focus,
-  .social-buttons a:active {
-    background-color: $primary_yellow;
-    color: $primary_black;
-  }
-  .footer-social {
-    flex-direction: row;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .social-buttons {
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
-  }
 }
