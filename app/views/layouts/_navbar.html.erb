@@ -9,21 +9,27 @@
 
   <button class="navbar-toggler navbar-toggler-right" type="button">
     <div id="main">
-      <span class="sidebar-button" onclick="openNav()">Menu <i class="fa fa-bars"></i></span>
+      <span class="sidenav-button" onclick="openNav()">Menu<i class="fa fa-bars sidenav-bars"></i></span>
     </div>
   </button>
 
-
+<div class="container  text-center">
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <%= link_to 'HOME', root_path %>
-    <%= link_to 'MENU', menus_path %>
-    <%= link_to 'ABOUT', abouts_path %>
-    <%= link_to 'CONTACT', contacts_path %>
-    <%= link_to 'POSITIONS', positions_path %>
-    <%= link_to 'REVIEWS', reviews_path %>
-  </div>
 
+    <%= image_tag 'Group_82.png', class: 'sidenav-logo' %>
+    <%= link_to 'MENU', menus_path, class:'sidenav-link' %>
+    <%= link_to 'ABOUT', abouts_path, class:'sidenav-link' %>
+    <%= link_to 'CONTACT', contacts_path, class:'sidenav-link' %>
+    <%= link_to 'POSITIONS', positions_path, class:'sidenav-link' %>
+    <%= link_to 'REVIEWS', reviews_path, class:'sidenav-link' %>
+    <br>
+    <h3 class="h3-dark">HOURS:</p>
+    <p>Monday - Friday: 8 AM - 2 PM</p>
+    <p>Saturday - Sunday: 8 AM - 2 PM</p>
+
+  </div>
+</div>
 
 
 </nav>

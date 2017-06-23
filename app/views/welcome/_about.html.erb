@@ -1,26 +1,20 @@
 <section class="welcome-about" id="welcome-about">
   <div class="container">
-    <div class="jumbotron">
       <div class="row">
-        <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-5">
           <div class="row">
             <%= image_tag('Group 122.png', class: 'd-flex img-fluid squiggly-lines' )%>
-          </div>
-          <br>
-          <div class="row">
-            <h1>OREGON INSPIRED.</h1>
-            <h1>OHIO GROWN.</h1>
+            <h2 class="h2-dark">OREGON INSPIRED. OHIO GROWN.</h2>
           </div>
         </div>
-        <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-6 offset-sm-1">
           <div class="row">
-            <p>Our purpose is to provide central Ohio with a friendly, delicious and localized breakfast option. By introducing local ingredients to the traditional, old world recipes that helped The Original Pancake House gain national acclaim, we are featuring the distinct flavors of the midwest while offering the menu as it was intended.</p>
+            <p>In 1953, The Original Pancake House was founded in Portland. The unique menu, which featured and traditional recipes from around the world, immediately gained national acclaim. Today, we pay homage to the original by offering you the menu as it was intended and serving pancakes as you like them.</p>
           </div>
           <div class="row">
-            <p>READ MORE  ></p>
+            <%= link_to 'read more >', abouts_path, class:"small-dark-link" %>
           </div>
         </div>
       </div>
-    </div>
   </div>
 </section>

@@ -88,10 +88,15 @@ nav {
       padding-top: 60px;
   }
 
-  .sidenav a {
+  .sidenav .sidenav-link {
       padding: 8px 8px 8px 32px;
       text-decoration: none;
-      font-size: 25px;
+      font-size: 38px;
+    	font-weight: 600;
+    	line-height: 1.5;
+    	letter-spacing: 5px;
+    	margin-top: 10px;
+    	margin-bottom: 10px;
       color: $primary_black;
       display: block;
       transition: 0.3s;
@@ -107,17 +112,40 @@ nav {
       right: 25px;
       font-size: 36px;
       margin-left: 50px;
+      color: $primary_black;
+  }
+
+  .sidenav .closebtn:hover {
+
+      color: $primary_yellow;
+      text-decoration: none;
   }
 
   @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {
+      padding-top: 15px;
+    }
+
+    .sidenav a {
+      font-size: 24px;
+    }
   }
 
-  .sidebar-button {
-    color: $primary_white
+  .sidenav-button {
+    color: $primary_white;
 
   }
+
+  .sidenav-bars {
+    color: $primary_yellow;
+  }
+
+  .sidenav-logo {
+    height: 75px;
+    width: auto;
+    margin-bottom: 50px;
+  }
+
 }
 
 .jumbotron-white {
@@ -150,4 +178,180 @@ hr {
       color: $primary_yellow;
       position: relative;
     }
+}
+
+
+h1 {
+	font-family: "Open Sans", sans-serif;
+	color: $primary_yellow;
+	font-size: 72px;
+	font-weight: 800;
+	line-height: 1.5;
+	letter-spacing: 5px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+  	font-family: "Open Sans", sans-serif;
+  	color: $primary_yellow;
+  	font-size: 36px;
+  	font-weight: 600;
+  	margin-top: 10px;
+  	margin-bottom: 10px;
+  }
+}
+
+h2.h2-dark {
+	font-family: "Open Sans", sans-serif;
+	color: $primary_black;
+	font-size: 38px;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+h2.h2-light {
+	font-family: "Open Sans", sans-serif;
+	color: $primary_yellow;
+	font-size: 38px;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+@media screen and (max-width: 768px) {
+  h2.h2-dark {
+  	font-family: "Open Sans", sans-serif;
+  	color: $primary_black;
+  	font-size: 28px;
+  	font-weight: 600;
+  	margin-top: 10px;
+  	margin-bottom: 10px;
+  }
+
+  h2.h2-light {
+  	font-family: "Open Sans", sans-serif;
+  	color: $primary_yellow;
+  	font-size: 28px;
+  	font-weight: 600;
+  	margin-top: 10px;
+  	margin-bottom: 10px;
+
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  h2.h2-light {
+  	color: $primary_yellow;
+  	font-size: 28px;
+  	font-weight: 600;
+  	margin-top: 10px;
+  	margin-bottom: 10px;
+  }
+}
+
+h3.h3-dark {
+	font-family: "Open Sans", sans-serif;
+	color: $primary_black;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 2.0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+p {
+	font-family: "Open Sans", sans-serif;
+	color: $primary_gray;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 2.0;
+}
+
+p.white-text {
+	font-family: "Open Sans", sans-serif;
+	color: $primary_white;
+	font-size: 16px;
+	font-weight: normal;
+  text-transform: uppercase;
+	line-height: 2.0;
+}
+
+
+p.small {
+	font-family: "Open Sans", sans-serif;
+	color: $primary_gray;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.5;
+}
+
+a.big-link {
+	font-family: "Open Sans", sans-serif;
+	text-transform: uppercase;
+	color: $primary_white;
+	font-size: 24px;
+	font-weight: normal;
+	letter-spacing: 5px;
+  border-bottom: 2.5px solid $primary_yellow;
+}
+
+a.big-link:hover {
+  color: $primary_gray;
+  text-decoration: none;
+  border-bottom: 2.5px solid $primary_gray;
+}
+
+@media screen and (max-width: 768px) {
+  a.big-link {
+  	font-family: "Open Sans", sans-serif;
+  	text-transform: uppercase;
+  	color: $primary_white;
+  	font-size: 18px;
+    border-bottom: 2.5px solid $primary_yellow;
+  }
+
+  a.big-link:hover {
+    color: $primary_gray;
+    text-decoration: none;
+    border-bottom: 2.5px solid $primary_gray;
+  }
+
+}
+
+
+ a.small-light-link {
+	font-family: "Open Sans", sans-serif;
+	text-transform: uppercase;
+	color: $primary_yellow;
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 5px;
+}
+
+ a.small-dark-link {
+	font-family: "Open Sans", sans-serif;
+	text-transform: uppercase;
+	color: $primary_black;
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 5px;
+}
+
+ a.small-dark-link:hover {
+   color: $primary_yellow;
+   text-decoration: none;
 }

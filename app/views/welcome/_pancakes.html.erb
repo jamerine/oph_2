@@ -1,26 +1,20 @@
 <section class="welcome-pancakes" id="welcome-pancakes">
   <div class="container">
-    <div class="jumbotron">
       <div class="row">
-        <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-5">
           <div class="row">
             <%= image_tag('Group 122.png', class: 'd-flex img-fluid squiggly-lines' )%>
-          </div>
-          <br>
-          <div class="row">
-            <h1>PANCAKES AS YOU</h1>
-            <h1>LIKE THEM.</h1>
+            <h2 class="h2-dark">PANCAKES AS YOU LIKE THEM.</h2>
           </div>
         </div>
-        <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-6 offset-sm-1">
           <div class="row">
-            <p>The OPH experience doesn’t stop at our menu. Our beautiful, brand new restaurant was designed with the goal of being the local gathering place of laughter, smiles and tasty food. Whether you’re grabbing a cup of coffee with friends, enjoying a family breakfast or were craving our world famous Apple Pancake, we welcome you all.</p>
+            <p>We are committed to preparing delicious and quality dishes that you will love. By focus on local ingredients and reputable brands, we are confident that you’ll taste the difference. to ensure this, we’ve partnered with Central Ohio’s Mid/West Fresh Foods to supply our fruits, veggies, produce, dairy and herbs.</p>
           </div>
           <div class="row">
-            <p>READ MORE  ></p>
+            <%= link_to 'read more >', abouts_path, class:"small-dark-link" %>
           </div>
         </div>
       </div>
-    </div>
   </div>
 </section>
