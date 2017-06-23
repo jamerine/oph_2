@@ -33,8 +33,6 @@
   @import "positions";
   @import "reviews";
 
-
-
 body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -44,6 +42,7 @@ body {
 
 nav {
   position: fixed;
+
 
 
   .navbar-brand {
@@ -86,6 +85,9 @@ nav {
       overflow-x: hidden;
       transition: 0.5s;
       padding-top: 60px;
+      -webkit-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.30);
+      -moz-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.30);
+      box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.30);
   }
 
   .sidenav .sidenav-link {
