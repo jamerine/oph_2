@@ -53,13 +53,14 @@ nav {
     background: image-url("menu_white_2x.png") center / contain no-repeat ;
     height: 50px;
     width: 50px;
+    margin-top: -50px;
     line-height: 70px;
   }
 
   .navbar-logo {
     background: image-url("oph_chef_logo_2x.png") center / contain no-repeat ;
-    height: 100px;
-    width: 100px;
+    height: 163.88px;
+    width: 200px;
     line-height: 70px;
   }
 
@@ -73,7 +74,9 @@ nav {
       line-height: 70px;
     }
 
-
+    .navbar-menu {
+      margin-top: 0px;
+    }
   }
 
   .navbar-toggler {
@@ -131,6 +134,10 @@ nav {
 
       color: $primary_yellow;
       text-decoration: none;
+  }
+
+  .sidenav-days {
+    letter-spacing: normal;
   }
 
   @media screen and (max-height: 450px) {
@@ -358,4 +365,8 @@ a.big-link:hover {
  a.small-dark-link:hover {
    color: $primary_yellow;
    text-decoration: none;
+}
+
+hr {
+    background-color: #95989A
 }
