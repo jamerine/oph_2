@@ -19,8 +19,6 @@
  $primary_white: #FFFFFF;
 
 
-   #some-element { display: none; }
-
 
 
   @import "normalize-rails/normalize";
@@ -63,17 +61,18 @@ nav {
     height: 100px;
     width: 100px;
     line-height: 70px;
-    margin-left: 25px;
   }
 
+
   @media screen and (max-width: 768px) {
-    //
-    // .navbar-logo {
-    //   background: image-url("OPH_white_2x.png") center / contain no-repeat ;
-    //   height: 75px;
-    //   width: 100px;
-    //   line-height: 70px;
-    // }
+
+    .navbar-logo {
+      background: image-url("OPH_white_2x.png") center / contain no-repeat ;
+      height: 75px;
+      width: 100px;
+      line-height: 70px;
+    }
+
 
   }
 

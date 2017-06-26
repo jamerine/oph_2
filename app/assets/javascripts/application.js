@@ -250,8 +250,14 @@ $(document).ready(function(){
          $(".navbar-fixed-top").css('-moz-box-shadow', '0px 0px 0px 0px rgba(0,0,0,0.0)');
          $(".navbar-menu").css('background-image', 'url("../assets/menu_white_2x.png")');
          $(".navbar-menu").css('height', '50px');
+         if (isMobile.matches) {
+           $(".navbar-brand").css('background-image', 'url("../assets/OPH_white_2x.png")');
+           $(".navbar-brand").css('height', '50px');
+         } else {
            $(".navbar-brand").css('background-image', 'url("../assets/oph_chef_logo_2x.png")');
            $(".navbar-brand").css('height', '100px');
+         }
+
 
 
        };
