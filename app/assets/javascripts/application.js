@@ -213,6 +213,11 @@ function closeNav() {
 };
 
 
+function scrollTop() {
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
+};
+
+
 
 $(document).ready(function(){
 
