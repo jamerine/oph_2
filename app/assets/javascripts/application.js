@@ -221,6 +221,9 @@ function scrollTop() {
 
 $(document).ready(function(){
 
+  $(document.body).animate({scrollTop: '0px'}, 1000);//1second animation
+
+
    var scroll_start = 0;
    var startchange = $('#section-change');
    var offset = startchange.offset();
