@@ -1,18 +1,11 @@
-<nav class="navbar navbar-fixed-top navbar-toggleable-md fixed-top bg-transparent py-3" id="navbar">
+<nav class="navbar navbar-fixed-top fixed-top bg-transparent py-3" id="navbar">
+  <div class="container-fluid">
+    <%= link_to '', root_path, class:"navbar-brand navbar-logo" %>
 
-    <%= link_to '', root_path, class:"navbar-brand" %>
 
-
-  <!-- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-  </button> -->
-
-  <button class="navbar-toggler navbar-toggler-right" type="button">
-    <div id="main">
-      <span class="sidenav-button" onclick="openNav()">Menu<i class="fa fa-bars sidenav-bars"></i></span>
-    </div>
-  </button>
-
+      <%= link_to '', 'javascript:;', class:"navbar-menu", onclick:"openNav()" %>
+      <!-- <span class="sidenav-button" onclick="openNav()"><%= image_tag("menu_white_2x.png", class: "navbar-menu") %></span> -->
+  </div>
 <div class="container  text-center">
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>

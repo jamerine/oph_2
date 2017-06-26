@@ -19,6 +19,8 @@
  $primary_white: #FFFFFF;
 
 
+   #some-element { display: none; }
+
 
 
   @import "normalize-rails/normalize";
@@ -41,30 +43,39 @@ body {
 }
 
 nav {
-  position: fixed;
+  .drop-shadow-affect {
+    -webkit-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.30);
+    -moz-box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.30);
+    box-shadow: -3px 0px 5px 0px rgba(0,0,0,0.30);
+    background-color: rgba(255, 255, 255, 1.0);
+  }
 
 
-
-  .navbar-brand {
-    background: image-url("Group_32.png") center / contain no-repeat ;
-    // width: 100px;
-    height: 39px;
-    width: 300px;
-    margin-left: 25px;
+  .navbar-menu {
+    background: image-url("menu_white_2x.png") center / contain no-repeat ;
+    height: 50px;
+    width: 50px;
     line-height: 70px;
   }
 
-  @media screen and (max-width: 768px) {
-    .navbar-brand {
-      height: 25px;
-      width: 200px;
-      margin-left: 5px;
-      line-height: 0px;
-    }
-
+  .navbar-logo {
+    background: image-url("oph_chef_logo_2x.png") center / contain no-repeat ;
+    height: 100px;
+    width: 100px;
+    line-height: 70px;
+    margin-left: 25px;
   }
 
+  @media screen and (max-width: 768px) {
+    //
+    // .navbar-logo {
+    //   background: image-url("OPH_white_2x.png") center / contain no-repeat ;
+    //   height: 75px;
+    //   width: 100px;
+    //   line-height: 70px;
+    // }
 
+  }
 
   .navbar-toggler {
     color: $primary_white;
@@ -133,14 +144,6 @@ nav {
     }
   }
 
-  .sidenav-button {
-    color: $primary_white;
-
-  }
-
-  .sidenav-bars {
-    color: $primary_yellow;
-  }
 
   .sidenav-logo {
     height: 75px;

@@ -19,26 +19,19 @@
       line-height: 150%;
       color: $primary_yellow;
     }
+
+    @media screen and (max-width: 768px) {
+      .title-text {
+          font-size: 42px;
+          letter-spacing: 1.5px;
+          font-weight: 600;
+          line-height: 150%;
+          color: $primary_yellow;
+          position: relative;
+        }
+    }
 }
 
-#reviews-body {
-  .reviews-intro {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  .positions-intro p {
-    color: $primary_gray;
-    font-size: 24px;
-    line-height: 48px;
-    font-weight: 400;
-  }
-
-  .positions-list-area {
-    padding-top: 25px;
-  }
-
-}
 
 
 #reviews-list {
@@ -63,5 +56,12 @@
     color: $primary_gray;
     font-size: 18px;
     margin-top: 25px;
+  }
+
+  @media screen and (max-width: 768px) {
+
+   h3.review-body {
+        font-size: 18px;
+      }
   }
 }

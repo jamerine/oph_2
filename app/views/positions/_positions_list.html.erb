@@ -1,27 +1,27 @@
 <section class="positions-list", id="positions-list">
   <div class="container">
     <div class="row position-list-header">
-      <div class="col-3 offset-2">
+      <div class="col-md-4 col-4">
         <h4>TITLE</h4>
       </div>
-      <div class="col-3">
+      <div class="col-md-4 col-4">
         <h4>LOCATION</h4>
       </div>
-      <div class="col-2">
+      <div class="col-md-4 col-4">
         <h4></h4>
       </div>
     </div>
 
     <% @positions.each do |pos| %>
       <div class="row position-row">
-        <div class="col-3 offset-2 position_cell">
-          <h3><%= pos.title %></h3>
+        <div class="col-4 col-md-4 position_cell">
+          <h4><%= pos.title %></h4>
         </div>
-        <div class="col-3 position_cell">
-          <h3><%= pos.location %></h3>
+        <div class="col-4 col-md-4 position_cell">
+          <h4><%= pos.location %></h4>
         </div>
-        <div class="col-2 position_cell text-right">
-          <h3><%= link_to 'APPLY NOW', pos.application.url, class: 'btn btn-position-submit' %></h3>
+        <div class="col-4 col-md-4 position_cell text-center">
+          <h4><%= link_to 'APPLY NOW', pos.application.url, class: 'btn btn-position-submit' %></h4>
         </div>
       </div>
     <% end %>
