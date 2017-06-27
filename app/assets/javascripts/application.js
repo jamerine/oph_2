@@ -227,7 +227,7 @@ $(document).ready(function(){
    var scroll_start = 0;
    var startchange = $('#section-change');
    var offset = startchange.offset();
-   offset.top = offset.top - 50
+   offset.top = offset.top - 500
     if (startchange.length){
    $(document).scroll(function() {
      var isMobile = window.matchMedia("only screen and (max-width: 760px)");
@@ -244,6 +244,9 @@ $(document).ready(function(){
           $(".navbar-fixed-top").css('box-shadow', ' -3px 0px 5px 0px rgba(0,0,0,0.30)');
           $(".navbar-fixed-top").css('-webkit-box-shadow', ' -3px 0px 5px 0px rgba(0,0,0,0.30)');
           $(".navbar-fixed-top").css('-moz-box-shadow', ' -3px 0px 5px 0px rgba(0,0,0,0.30)');
+          $(".navbar-fixed-top").css('-webkit-transition', 'all 0.5s');
+          $(".navbar-fixed-top").css('transition', 'all 0.5s');
+          $(".navbar-fixed-top").css('-moz-transition', 'all 0.5s');
 
        } else {
          $(".navbar-fixed-top").css('background-color', 'transparent');
