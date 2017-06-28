@@ -58,7 +58,7 @@ nav {
   }
 
   .navbar-logo {
-    background: image-url("oph_chef_logo_2x.png") center / contain no-repeat ;
+    background: image-url("OPH_Logo_White.svg") center / contain no-repeat ;
     height: 163.88px;
     width: 200px;
     line-height: 70px;
@@ -369,4 +369,9 @@ a.big-link:hover {
 
 hr {
     background-color: #95989A
+}
+
+
+.email-address {
+    color: $primary_gray;
 }

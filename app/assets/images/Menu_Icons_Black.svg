@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1789 15.5 69 66.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2d2d2f;
+        font-size: 18px;
+        font-family: OpenSans, Open Sans;
+        letter-spacing: 0.1em;
+      }
+
+      .cls-2 {
+        fill: #d5b65c;
+      }
+    </style>
+  </defs>
+  <g id="Group_19" data-name="Group 19" transform="translate(1741 -24)">
+    <g id="Group_8" data-name="Group 8" transform="translate(194 -48)">
+      <text id="MENU" class="cls-1" transform="translate(-146 130)"><tspan x="5.332" y="19">MENU</tspan></text>
+    </g>
+    <g id="Group_18" data-name="Group 18">
+      <path id="Path_201" data-name="Path 201" class="cls-2" d="M2.5.5h55a2,2,0,0,1,0,4H2.5a2,2,0,0,1,0-4Z" transform="translate(52 39)"/>
+      <path id="Path_200" data-name="Path 200" class="cls-2" d="M2.5.5h55a2,2,0,0,1,0,4H2.5a2,2,0,0,1,0-4Z" transform="translate(52 51)"/>
+      <rect id="Rectangle_9" data-name="Rectangle 9" class="cls-2" width="60" height="4" rx="2" transform="translate(52 63)"/>
+    </g>
+  </g>
+</svg>

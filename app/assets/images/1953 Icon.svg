@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="434 1476 100 100">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #d5b65c;
+      }
+
+      .cls-1 {
+        font-size: 16px;
+        font-family: OpenSans, Open Sans;
+        letter-spacing: 0.1em;
+      }
+
+      .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #d5b65c;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_55" data-name="Group 55" transform="translate(-185 245)">
+    <text id="EST." class="cls-1" transform="translate(633 1251)"><tspan x="18.205" y="17">EST.</tspan></text>
+    <rect id="Rectangle_27" data-name="Rectangle 27" class="cls-2" width="60" height="2" rx="1" transform="translate(639 1280)"/>
+    <g id="Ellipse_5" data-name="Ellipse 5" class="cls-3" transform="translate(619 1231)">
+      <circle class="cls-4" cx="50" cy="50" r="50"/>
+      <circle class="cls-5" cx="50" cy="50" r="49"/>
+    </g>
+    <text id="_1953" data-name="1953" class="cls-1" transform="translate(633 1287)"><tspan x="15.303" y="17">1953</tspan></text>
+  </g>
+</svg>

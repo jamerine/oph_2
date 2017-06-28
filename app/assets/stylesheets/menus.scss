@@ -64,17 +64,38 @@
   .menu-item {
     padding-left: 25px;
     padding-right: 25px;
+    margin-bottom: 25px;
+  }
+
+  .menu-section-title {
+    letter-spacing: 5px;
+  }
+
+  .menu-item-description {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+
+  .menu-item-price {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 1.5rem;
   }
 
 
 
-
-  .menu-line {
-    border-bottom: 2.5px solid $primary_yellow;
-  }
 
   .menu-collection {
     margin-top: 50px;
+  }
+
+
+  .menu-item-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 1.5rem;
   }
 
 
