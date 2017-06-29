@@ -321,9 +321,10 @@ a.big-link {
 }
 
 a.big-link:hover {
-  color: $primary_gray;
+  color: $primary_yellow;
   text-decoration: none;
-  border-bottom: 2.5px solid $primary_gray;
+  border-bottom: 2.5px solid $primary_yellow;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 768px) {
@@ -336,9 +337,10 @@ a.big-link:hover {
   }
 
   a.big-link:hover {
-    color: $primary_gray;
+    color: $primary_yellow;
     text-decoration: none;
-    border-bottom: 2.5px solid $primary_gray;
+    border-bottom: 2.5px solid $primary_yellow;
+    transition: 0.3s;
   }
 
 }
@@ -365,6 +367,7 @@ a.big-link:hover {
  a.small-dark-link:hover {
    color: $primary_yellow;
    text-decoration: none;
+   transition: 0.3s;
 }
 
 hr {
