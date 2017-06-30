@@ -37,25 +37,34 @@
 #about-section {
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
 
   p {
     color: $primary_gray;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 48px;
     font-weight: 400;
+  }
+
+  .letter-paragraph {
+    margin-bottom: 25px;
+  }
+
+  .letter-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 
   @media screen and (max-width: 768px) {
       margin-top: 50px;
       margin-bottom: 50px;
-      margin-left: 25px;
-      margin-right: 25px;
+      margin-left: 50px;
+      margin-right: 50px;
 
       p {
         color: $primary_gray;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 48px;
         font-weight: 400;
       }
