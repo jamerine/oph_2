@@ -241,7 +241,7 @@ $(document).ready(function(){
          $(".navbar-brand").css('background-image', 'url("../assets/OPH_Black.svg")');
          $(".navbar-brand").css('height', '50px');
          $(".navbar-brand").css('width', '100px');
-         $(".navbar-menu").css('background-image', 'url("../assets/Menu_Icons.svg")');
+         $(".navbar-menu").css('background-image', 'url("../assets/menu_black.svg")');
          $(".navbar-menu").css('height', '50px');
          $(".navbar-menu").css('margin-top', '0px');
           $(".navbar-fixed-top").css('box-shadow', ' -3px 0px 5px 0px rgba(0,0,0,0.30)');
@@ -256,7 +256,7 @@ $(document).ready(function(){
          $(".navbar-fixed-top").css('box-shadow', '0px 0px 0px 0px rgba(0,0,0,0.0)');
          $(".navbar-fixed-top").css('-webkit-box-shadow', '0px 0px 0px 0px rgba(0,0,0,0.0)');
          $(".navbar-fixed-top").css('-moz-box-shadow', '0px 0px 0px 0px rgba(0,0,0,0.0)');
-         $(".navbar-menu").css('background-image', 'url("../assets/menu_white_2x.png")');
+         $(".navbar-menu").css('background-image', 'url("../assets/menu_white.svg")');
          $(".navbar-menu").css('height', '50px');
          $(".navbar-menu").css('margin-top', '-50px');
          if (isMobile.matches) {
