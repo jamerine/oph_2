@@ -42,14 +42,11 @@
 
   p {
     color: $primary_gray;
-    font-size: 22px;
-    line-height: 48px;
+    font-size: 16px;
+    line-height: 32px;
     font-weight: 400;
   }
 
-  .letter-paragraph {
-    margin-bottom: 25px;
-  }
 
   .letter-container {
     margin-top: 100px;
@@ -65,7 +62,7 @@
       p {
         color: $primary_gray;
         font-size: 16px;
-        line-height: 48px;
+        line-height: 32px;
         font-weight: 400;
       }
   }
