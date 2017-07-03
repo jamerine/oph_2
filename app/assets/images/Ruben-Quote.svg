@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="756 4758 380 57">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2d2d2f;
+        font-size: 24px;
+        font-family: OpenSans-Bold, Open Sans;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-family: OpenSans, Open Sans;
+        font-weight: 400;
+      }
+
+      .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-3 {
+        stroke: #d5b65c;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_244" data-name="Group 244" transform="translate(-12 -17)">
+    <text id="RUBEN_GUZMAN_OWNER" data-name="RUBEN GUZMAN, OWNER" class="cls-1" transform="translate(780 4786)"><tspan x="8.041" y="26">RUBEN GUZMAN</tspan><tspan class="cls-2" y="26">, OWNER</tspan></text>
+    <g id="Rectangle_124" data-name="Rectangle 124" class="cls-3" transform="translate(768 4775)">
+      <rect class="cls-4" width="380" height="57" rx="10"/>
+      <rect class="cls-5" x="1" y="1" width="378" height="55" rx="9"/>
+    </g>
+  </g>
+</svg>

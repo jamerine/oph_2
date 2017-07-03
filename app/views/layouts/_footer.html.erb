@@ -3,25 +3,26 @@
 <section class="welcome-footer hidden-xs" id="welcome-footer">
     <div class="container-fluid">
       <div class="row justify-content-between  text-center">
-        <div class="col-md-4 col-sm-12">
-          <p class="footer-p">The Original Pancake House</p>
-          <p class="footer-p">1675 W. Lane Ave.</p>
-          <p class="footer-p">Upper Arlington, OH 43215</p>
+        <div class="col-md-4 col-sm-12 footer-logo">
+          <%= image_tag('OPH_Logo_black.svg', class: 'd-flex img-fluid oph-footer-logo mx-auto d-block' )%>
         </div>
-
-        <div class="col-md-4 col-sm-12 social-buttons">
-          <div class="row justify-content-center">
-            <a href="#" target="_blank"><i class="fa fa-facebook" target="_blank"></i></a>
-            <a href="#" target="_blank"><i class="fa fa-linkedin" target="_blank"></i></a>
-            <a href="#" target="_blank"><i class="fa fa-twitter" target="_blank"></i></a>
+        <div class="col-md-4 col-sm-12 footer-links">
+          <div class="row justify-content-between footer-link-row">
+            <%= link_to 'Menu', menus_path, class:'footer-link' %>
+            <%= link_to 'About', abouts_path, class:'footer-link' %>
+            <%= link_to 'Contact', contacts_path, class:'footer-link' %>
+            <%= link_to 'Positions', positions_path, class:'footer-link' %>
+            <%= link_to 'Reviews', reviews_path, class:'footer-link' %>
           </div>
-
+          <div class="row justify-content-center footer-copyright">
+            <p>© 2017 - Website Designed by <%= link_to 'Dittoh, LLC', 'http://dittoh.com', class: 'dittoh-link' %></a>, All Rights Reserved.</p>
+          </div>
         </div>
-
-        <div class="col-md-4 col-sm-12">
+        <div class="col-md-4 col-sm-12 footer-description">
+          <p class="footer-p">The Original Pancake House</p>
           <p class="footer-p">(614) 695-6810</p>
-          <p class="footer-p"><a href="mailto:contact@ophcentralohio.com" class="email-address">contact@ophcentralohio.com</a></p>
-          <p class="footer-p">www.ophcentralohio.com</p>
+          <p class="footer-p">1633 W. Lane Ave.</p>
+          <p class="footer-p">Upper Arlington, OH 43221</p>
         </div>
       </div>
 

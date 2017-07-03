@@ -373,3 +373,68 @@ hr {
 .email-address {
     color: $primary_gray;
 }
+
+
+
+
+#welcome-footer {
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  .footer-p {
+    line-height: .5;
+    font-size: 14px;
+  }
+
+  .footer-link-row {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .footer-link {
+    color: $primary_gray;
+  }
+
+  .footer-link:hover {
+    color: $primary_yellow;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .footer-description {
+    margin-top: 25px;
+  }
+
+  .footer-logo {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .oph-footer-logo {
+    height: 100px;
+  }
+
+  .dittoh-link {
+    color: $primary_gray;
+  }
+
+  .dittoh-link:hover {
+    color: $primary_yellow;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .footer-link-row {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    .footer-copyright {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+  }
+}

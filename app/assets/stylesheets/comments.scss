@@ -21,3 +21,13 @@
   border-color: $primary_yellow;
   border-radius: 3px;
 }
+
+.form-control {
+  border-color: $primary_black;
+  margin-top: 5px;
+}
+
+.form-control:focus {
+  border-color: $primary_yellow;
+  transition: 0.3s;
+}
