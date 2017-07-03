@@ -214,66 +214,54 @@ function closeNav() {
 };
 
 
+
 function scrolltoTop() {
   document.body.scrollTop = document.documentElement.scrollTop = 0;
 };
-
 
 
 $(document).ready(function(){
 
   $(document.body).animate({scrollTop: '0px'}, 1000);//1second animation
 
-
-   var scroll_start = 0;
-  //  var startchange = $('#section-change');
-   var startchange = $('.navbar');
-   var offset = startchange.offset();
-   offset.top = offset.top + 1
-  //  offset.top = offset.top - 600
-    if (startchange.length){
    $(document).scroll(function() {
      var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-         $(".navbar-fixed-top").css('background-color', 'rgba(255, 255, 255, 1.0)');
-         $(".navbar-brand").css('background-image', 'url("../assets/OPH_Black.svg")');
+     if($(window).scrollTop() === 0) {
+       $(".navbar-fixed-top").css('background-color', 'transparent');
+       $(".navbar-fixed-top").css('box-shadow', '0px 0px 0px 0px rgba(0,0,0,0.0)');
+       $(".navbar-fixed-top").css('-webkit-box-shadow', '0px 0px 0px 0px rgba(0,0,0,0.0)');
+       $(".navbar-fixed-top").css('-moz-box-shadow', '0px 0px 0px 0px rgba(0,0,0,0.0)');
+       $(".navbar-menu").css('background-image', 'url("../assets/menu_white.svg")');
+       $(".navbar-menu").css('height', '50px');
+       $(".navbar-menu").css('margin-top', '-50px');
+       if (isMobile.matches) {
+         $(".navbar-brand").css('background-image', 'url("../assets/OPH_white_2x.png")');
          $(".navbar-brand").css('height', '50px');
-         $(".navbar-brand").css('width', '100px');
-         $(".navbar-menu").css('background-image', 'url("../assets/menu_black.svg")');
-         $(".navbar-menu").css('height', '50px');
          $(".navbar-menu").css('margin-top', '0px');
-          $(".navbar-fixed-top").css('box-shadow', ' -3px 0px 5px 0px rgba(0,0,0,0.30)');
-          $(".navbar-fixed-top").css('-webkit-box-shadow', ' -3px 0px 5px 0px rgba(0,0,0,0.30)');
-          $(".navbar-fixed-top").css('-moz-box-shadow', ' -3px 0px 5px 0px rgba(0,0,0,0.30)');
-          $(".navbar-fixed-top").css('-webkit-transition', 'all 0.5s');
-          $(".navbar-fixed-top").css('transition', 'all 0.5s');
-          $(".navbar-fixed-top").css('-moz-transition', 'all 0.5s');
-
        } else {
-         $(".navbar-fixed-top").css('background-color', 'transparent');
-         $(".navbar-fixed-top").css('box-shadow', '0px 0px 0px 0px rgba(0,0,0,0.0)');
-         $(".navbar-fixed-top").css('-webkit-box-shadow', '0px 0px 0px 0px rgba(0,0,0,0.0)');
-         $(".navbar-fixed-top").css('-moz-box-shadow', '0px 0px 0px 0px rgba(0,0,0,0.0)');
-         $(".navbar-menu").css('background-image', 'url("../assets/menu_white.svg")');
-         $(".navbar-menu").css('height', '50px');
-         $(".navbar-menu").css('margin-top', '-50px');
-         if (isMobile.matches) {
-           $(".navbar-brand").css('background-image', 'url("../assets/OPH_white_2x.png")');
-           $(".navbar-brand").css('height', '50px');
-           $(".navbar-menu").css('margin-top', '0px');
-         } else {
-           $(".navbar-brand").css('background-image', 'url("../assets/OPH_Logo_White.svg")');
-           $(".navbar-brand").css('height', '164.88px');
-           $(".navbar-brand").css('width', '200px');
-         }
+         $(".navbar-brand").css('background-image', 'url("../assets/OPH_Logo_White.svg")');
+         $(".navbar-brand").css('height', '164.88px');
+         $(".navbar-brand").css('width', '200px');
+       }
+     } else {
+       $(".navbar-fixed-top").css('background-color', 'rgba(255, 255, 255, 1.0)');
+       $(".navbar-brand").css('background-image', 'url("../assets/OPH_Black.svg")');
+       $(".navbar-brand").css('height', '50px');
+       $(".navbar-brand").css('width', '100px');
+       $(".navbar-menu").css('background-image', 'url("../assets/menu_black.svg")');
+       $(".navbar-menu").css('height', '50px');
+       $(".navbar-menu").css('margin-top', '0px');
+        $(".navbar-fixed-top").css('box-shadow', ' -3px 0px 5px 0px rgba(0,0,0,0.30)');
+        $(".navbar-fixed-top").css('-webkit-box-shadow', ' -3px 0px 5px 0px rgba(0,0,0,0.30)');
+        $(".navbar-fixed-top").css('-moz-box-shadow', ' -3px 0px 5px 0px rgba(0,0,0,0.30)');
+        $(".navbar-fixed-top").css('-webkit-transition', 'all 0.5s');
+        $(".navbar-fixed-top").css('transition', 'all 0.5s');
+        $(".navbar-fixed-top").css('-moz-transition', 'all 0.5s');
 
+     }
 
-
-       };
 
    });
-    }
 
 });
