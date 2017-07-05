@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   resources :menus
 
+
   resources :abouts
 
   resources :contacts
@@ -14,5 +15,13 @@ Rails.application.routes.draw do
   resources :positions
 
   resources :reviews
+
+
+  get 'menu', to: :index, controller: 'menus'
+
+  get 'about', to: :index, controller: 'abouts'
+
+  get 'contact', to: :index, controller: 'contacts'
+
 
 end

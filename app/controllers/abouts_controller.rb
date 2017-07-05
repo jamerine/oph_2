@@ -4,5 +4,9 @@ class AboutsController < ApplicationController
 
   end
 
+  def about
+
+  end
+
 
 end
