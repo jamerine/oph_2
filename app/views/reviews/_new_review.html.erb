@@ -4,7 +4,7 @@
 
     <div class="jumbotron jumbotron-white">
 
-    <h3>New Position</h3>
+    <h3>Create New Review</h3>
     <%= form_for @new_review do |f| %>
       <div class="row">
 
@@ -24,7 +24,7 @@
             <%= f.label :active %>
             <%= f.check_box :active, class: "form-control" %>
           </div>
-
+          <p>*** Reviews that are inactive will not display on the website. ***</p>
         </div>
 
           <div class="actions text-center">
