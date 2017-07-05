@@ -222,6 +222,7 @@ function scrolltoTop() {
 
 $(document).ready(function(){
 
+
   $(document.body).animate({scrollTop: '0px'}, 1000);//1second animation
 
    $(document).scroll(function() {

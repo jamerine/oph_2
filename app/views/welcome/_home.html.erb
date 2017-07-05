@@ -1,15 +1,35 @@
 <section class="home", id="home">
+  <div class="welcome-overlay container d-flex h-100">
+    <div class="row justify-content-center align-self-center text-center">
+      <h1 class="h1-home">WELCOME TO THE ORIGINAL PANCAKE HOUSE OF CENTRAL OHIO.</h1>
+      <%= link_to 'browse menu', 'menu', class:'big-link' %>
+    </div>
+  </div>
 
-  <div class="home-image">
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <div class="home-image carousel-item active">
+
+      </div>
+      <div class="home-image-2 carousel-item">
+
+      </div>
+      <div class="home-image-3 carousel-item">
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <div class="home-image">
     <div class="container d-flex h-100">
       <div class="row justify-content-center align-self-center text-center">
-            <!-- <%= image_tag('Group_82.png', class: 'd-flex img-fluid' )%> -->
         <h1 class="h1-home">WELCOME TO THE ORIGINAL PANCAKE HOUSE OF CENTRAL OHIO.</h1>
         <%= link_to 'browse menu', 'menu', class:'big-link' %>
         <br>
 
       </div>
     </div>
-  </div>
+  </div> -->
 
 </section>

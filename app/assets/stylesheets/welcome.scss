@@ -3,40 +3,69 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #home {
 
-
   .home-image {
         background: image-url("The-Original-Pancake-House_background.jpg") center center;
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
         height: 80vh;
-
+        z-index: -1;
     }
 
-  .h1-home {
-    margin-bottom: 50px;
+  .home-image-2 {
+        background: image-url("The-Original-Pancake-House_About.jpg") center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+        z-index: -1;
+    }
+
+  .home-image-3 {
+        background: image-url("The-Original-Pancake-House_contact.jpg") center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 80vh;
+        z-index: -1;
+    }
+
+    .h1-home {
+      margin-bottom: 50px;
+      margin-top: -100px;
+    }
+
+  .welcome-overlay {
+    position:absolute;
+    z-index:1;
+    left:0;
+    width:100%;
+    text-align:center;
+  }
+
+  .white-arrow {
 
   }
 
-  // .browse-menu {
-  //   color: $primary_white;
-  //   letter-spacing: 1px;
-  //   font-size: 36px;
-  //   letter-spacing: 1.5px;
-  //   font-weight: 600;
-  //   line-height: 150%;
-  // }
+
+  @media screen and (max-width: 1200px) {
+    .h1-home {
+      font-size: 58px;
+      font-weight: 600;
+      margin-bottom: 25px;
+      margin-top: -50px;
+    }
+
+  }
+
 
   @media screen and (max-width: 768px) {
-    // h1 {
-    //   font-size: 42px;
-    //   letter-spacing: 1.5px;
-    //   font-weight: 700;
-    //   line-height: 150%;
-    //   color: $primary_yellow;
-    //   position: relative;
-    // }
-
+    .h1-home {
+      font-size: 36px;
+      font-weight: 600;
+      margin-top: -100px;
+      margin-bottom: 10px;
+    }
   }
 
 
