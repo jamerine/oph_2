@@ -3,12 +3,12 @@ Rails.application.routes.draw do
   root 'welcome#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  resources :menus
+  # resources :menus
 
 
-  resources :abouts
+  # resources :abouts
 
-  resources :contacts
+  # resources :contacts
 
   resources :comments
 
@@ -16,12 +16,17 @@ Rails.application.routes.draw do
 
   resources :reviews
 
+  resource :menu
 
-  get 'menu', to: :index, controller: 'menus'
+  resource :about
 
-  get 'about', to: :index, controller: 'abouts'
+  resource :contact
 
-  get 'contact', to: :index, controller: 'contacts'
+  # get 'menu', to: :index, controller: 'menus'
+  #
+  # get 'about', to: :index, controller: 'abouts'
+  #
+  # get 'contact', to: :index, controller: 'contacts'
 
 
 end

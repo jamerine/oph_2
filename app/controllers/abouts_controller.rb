@@ -8,5 +8,8 @@ class AboutsController < ApplicationController
 
   end
 
+  def show
+
+  end
 
 end
