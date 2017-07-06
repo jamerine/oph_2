@@ -16,14 +16,14 @@
     <!-- End of Google Analytics -->
     <!-- Google Tag Manager trigger for Turbolinks -->
        <script type="text/javascript">
-       $(document).on('page:change', function(){
-       var url = window.location.href;
+          document.addEventListener(‘turbolinks:load’, function(event) {
+              var url = event.data.url;
 
-       dataLayer.push({
-       'event':'pageView',
-       'virtualUrl': url
-       });
-       });
+              dataLayer.push({
+                'event':'pageView',
+                'virtualUrl': url
+              });
+           });
        </script>
        <!-- End Google Tag Manager trigger for Turbolinks -->
 
