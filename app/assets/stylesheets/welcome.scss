@@ -191,10 +191,38 @@
     -moz-box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.30);
     box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.30);
     z-index: 1;
+    height: 90vh;
+    min-height: 700px;
+  }
+  .location-map {
+      // z-index: 1;
+      height: 90vh;
+      min-height: 700px;
   }
 
-  .location-map {
-      z-index: -1;
+  @media screen and (max-width: 768px) {
+    .location-info {
+      height: 90vh;
+      min-height: 0px;
+    }
+
+    .location-map {
+      height: 50vh;
+      min-height: 0px;
+    }
+  }
+
+
+  @media screen and (min-height: 2000px) {
+    .location-info {
+      height: 75vh;
+      min-height: 700px;
+    }
+
+    .location-map {
+      height: 75vh;
+      min-height: 700px;
+    }
   }
 
   .card-block {
