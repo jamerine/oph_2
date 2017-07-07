@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #home {
+  min-height: 700px;
 
   .home-image {
         background: image-url("The-Original-Pancake-House_background.jpg") center center;
@@ -9,6 +10,7 @@
         background-size: cover;
         width: 100%;
         height: 80vh;
+        min-height: 700px;
         z-index: -1;
     }
 
@@ -18,6 +20,7 @@
         background-size: cover;
         width: 100%;
         height: 80vh;
+        min-height: 700px;
         z-index: -1;
     }
 
@@ -27,6 +30,7 @@
         background-size: cover;
         width: 100%;
         height: 80vh;
+        min-height: 700px;
         z-index: -1;
     }
   .home-image-4 {
@@ -35,6 +39,7 @@
         background-size: cover;
         width: 100%;
         height: 80vh;
+        min-height: 700px;
         z-index: -1;
     }
 
@@ -62,9 +67,12 @@
     z-index:1;
     left:0;
     width:100%;
-    top: 40%;
-    transform: translateY(-50%);
+    top: 25%;
+    // -ms-transform: translateY(-50%); /* IE 9 */
+    // -webkit-transform: translateY(-50%); /* Chrome, Safari, Opera */
+    // transform: translateY(-50%);
     text-align:center;
+    min-height: 700px;
   }
 
   @media screen and (max-width: 1200px) {
@@ -213,14 +221,14 @@
   }
 
 
-  @media screen and (min-height: 2000px) {
+  @media (min-width: 2000px) {
     .location-info {
-      height: 75vh;
+      height: 70vh;
       min-height: 700px;
     }
 
     .location-map {
-      height: 75vh;
+      height: 70vh;
       min-height: 700px;
     }
   }
