@@ -22,13 +22,19 @@
     <br>
       <div class="row sidenav-social-row">
         <div class="col">
-          <i class="fa fa-google-plus-square sidenav-social-media fa-2x" aria-hidden="true"></i>
+          <%= link_to 'https://www.facebook.com/ophcentralohio/', class: 'social-media-link', target: '_blank' do %>
+            <i class="fa fa-facebook-square sidenav-social-media fa-2x" aria-hidden="true"></i>
+          <% end %>
         </div>
         <div class="col">
-          <i class="fa fa-facebook-square sidenav-social-media fa-2x" aria-hidden="true"></i>
+          <%= link_to 'https://www.google.com/maps/place/The+Original+Pancake+House/@40.0065039,-83.0539071,15z/data=!4m12!1m6!3m5!1s0x0:0xc419ce969e213170!2sThe+Original+Pancake+House!8m2!3d40.0065039!4d-83.0539071!3m4!1s0x0:0xc419ce969e213170!8m2!3d40.0065039!4d-83.0539071', class: 'social-media-link', target: '_blank' do %>
+            <i class="fa fa-google-plus-square sidenav-social-media fa-2x" aria-hidden="true"></i>
+          <% end %>
         </div>
         <div class="col">
-          <i class="fa fa-instagram sidenav-social-media fa-2x" aria-hidden="true"></i>
+          <%= link_to 'https://www.instagram.com/ophcentralohio/', class: 'social-media-link', target: '_blank' do %>
+            <i class="fa fa-instagram sidenav-social-media fa-2x" aria-hidden="true"></i>
+          <% end %>
         </div>
       </div>
 

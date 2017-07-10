@@ -152,6 +152,15 @@ nav {
     transition: 0.3s;
   }
 
+  .social-media-link {
+    color: $primary_black;
+  }
+
+  .social-media-link:hover {
+    color: $primary_yellow;
+    transition: 0.3s;
+  }
+
   @media screen and (max-height: 450px) {
     .sidenav {
       padding-top: 15px;
