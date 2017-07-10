@@ -185,6 +185,18 @@ nav {
   position: relative;
 }
 
+h1 .super-script {
+  vertical-align: super;
+  font-size: 38px;
+}
+
+p .super-script {
+  vertical-align: super;
+  font-size:10px;
+}
+
+
+
 
 @media screen and (max-width: 800px) {
   .title-text {
