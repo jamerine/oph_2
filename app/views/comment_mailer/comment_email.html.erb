@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h4>You have one new comment from the website comment form:</h4>
+    <ul>
+      <li>Name: <%= @comment.first_name %> <%= @comment.last_name %></li>
+      <li>Email: <%= @comment.email_address %></li>
+      <li>Phone Number: <%= @comment.phone_number %></li>
+      <li>Comment: <%= @comment.body %></li>
+      <li>Comment Submitted at: <%= @comment.created_at %></li>
+    </ul>
+
+    <h4>To respond to the comment, <%= mail_to "#{@comment.email_address}", "Click Here" %></h4>.
+  </body>
+</html>

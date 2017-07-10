@@ -6,9 +6,10 @@ class CommentsController < ApplicationController
     def create
       @comment = Comment.new(comment_params)
       if @comment.save
-        redirect_to contacts_path, notice: "Comment has been submitted."
+        CommentMailer.comment_email(@comment.id).deliver
+        redirect_to contact_path, notice: "Comment has been submitted."
       else
-        redirect_to contacts_path, alert: "There was an error submitting the comment. Please try again."
+        redirect_to contact_path, alert: "There was an error submitting the comment. Please try again."
       end
     end
 
