@@ -212,7 +212,6 @@
   @media screen and (max-width: 768px) {
     .location-info {
       height: 90vh;
-      min-height: 0px;
     }
 
     .location-map {
@@ -271,6 +270,12 @@
   .nowait-body {
     color: $primary_gray;
   }
+
+  .no-wait-image {
+    height: 80px;
+    width: 80px;
+  }
+
   @media screen and (max-width: 768px) {
     .nowait-section {
       text-align: left;
@@ -281,8 +286,8 @@
 
   @media screen and (max-width: 544px) {
     .nowait-section {
-      margin-left: 25px;
-      margin-right: 25px;
+      margin-left: 15px;
+      margin-right: 15px;
     }
   }
 

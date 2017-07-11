@@ -53,6 +53,8 @@ gem 'sitemap_generator'
 # Compression of assets
 gem 'heroku-deflater', :group => :production
 
+# Image Manipulation
+gem "mini_magick"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
