@@ -10,9 +10,9 @@ class PositionsController < ApplicationController
   def create
     @position = Position.new(position_params)
     if @position.save
-      redirect_to position_path, notice: 'Position has been created'
+      redirect_to positions_path, notice: 'Position has been created'
     else
-      redirect_to position_path, alert: 'There was an issue creating the position.  Please try again.'
+      redirect_to positions_path, alert: 'There was an issue creating the position.  Please try again.'
     end
   end
 
