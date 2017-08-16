@@ -55,7 +55,15 @@
     color: $primary_gray;
     font-size: 18px;
     margin-top: 25px;
+    margin-bottom: 25px;
   }
+
+  .review-name:hover {
+    color: $primary_yellow;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+
 
   @media screen and (max-width: 768px) {
 

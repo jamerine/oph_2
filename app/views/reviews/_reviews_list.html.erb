@@ -4,7 +4,8 @@
       <div class="row review-row text-center">
           <div class="col-md-8 offset-md-2 col-12 review-cell">
             <h3 class="review-body">"<%= review.body %>"</h3>
-            <p class="review-name"><%= "- #{ review.first_name.upcase } #{ review.last_name.first.upcase }" %></p>
+            <br>
+            <%= link_to "- #{ review.first_name.upcase } #{ review.last_name.first.upcase }", review.review_url, class:'review-name', target: '_blank' %>
           </div>
       </div>
     <% end %>
