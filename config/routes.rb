@@ -22,6 +22,7 @@ Rails.application.routes.draw do
 
   resource :contact
 
+  resources :products
   # get 'menu', to: :index, controller: 'menus'
   #
   # get 'about', to: :index, controller: 'abouts'
