@@ -1,7 +1,7 @@
 class MenusController < ApplicationController
 
   def index
-
+    @products = Product.all
   end
 
   def menu
@@ -9,7 +9,7 @@ class MenusController < ApplicationController
   end
 
   def show
-
+    @products = Product.all
   end
 
 

@@ -15,110 +15,21 @@
 
   <div class="container menu-collection">
     <div class="row">
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Corned Beef Hash</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">10.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our homemade hash, a blend of kosher corned beef, potatoes, and onions. Served with two eggs, any style and five potato pancakes.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Bacon and Eggs</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">9.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Four thick slices of hickory smoked bacon and two large fresh eggs, any style.</p>
+      <% products.each do |product| %>
+        <div class="col-12 col-md-6 col-lg-4 menu-item">
+          <div class="row">
+            <div class="col-9">
+              <h4 class="menu-item-title"> <%= product.name %> </h4>
+            </div>
+            <div class="col-3">
+              <h4 class="menu-item-price"><%= number_to_currency(product.price) %></h4>
+            </div>
+            <div class="col-12">
+              <p class="menu-item-description"><%= product.long_description %></p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Sausage and Eggs</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">9.25</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our special recipe patty sausage and two large fresh eggs, any style.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Links and Eggs</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">9.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our special recipe link sausage and two large fresh eggs, any style.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Canadian Bacon and Eggs</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">9.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Four thick slices of sugar cured, hickory smoked Canadian bacon and two large fresh eggs, any style.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Ham and Eggs</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">9.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">A thick slice of sugar cured, hickory smoked ham and two large fresh eggs, any style.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Minced Ham and Scrambled Eggs</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">9.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Three eggs lightly scrambled with diced sugar cured, hickory smoked ham.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Hash Browns and Eggs</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">9.50</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Hash browns and two large fresh eggs, any style.</p>
-          </div>
-        </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </div>

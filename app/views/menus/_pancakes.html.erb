@@ -14,215 +14,22 @@
   </div>
 
   <div class="container menu-collection">
-    <div class="row">
+  <div class="row">
+    <% products.each do |product| %>
       <div class="col-12 col-md-6 col-lg-4 menu-item">
         <div class="row">
           <div class="col-9">
-            <h4 class="menu-item-title">Buttermilk Pancakes</h4>
+            <h4 class="menu-item-title"> <%= product.name %> </h4>
           </div>
           <div class="col-3">
-            <h4 class="menu-item-price">7.25</h4>
+            <h4 class="menu-item-price"><%= number_to_currency(product.price) %></h4>
           </div>
           <div class="col-12">
-            <p class="menu-item-description">Served with whipped butter.</p>
+            <p class="menu-item-description"><%= product.long_description %></p>
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Chocolate Chip Pancakes</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">8.25</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Buttermilk pancakes filled and topped with mini chocolate chips. Dusted with powdered sugar and served with pure whipped cream made fresh with Supreme Pure Vanilla from Lyons®.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Georgia Pecan Pancakes</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">8.75</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Filled and topped with hot toasted pecans. Dusted with powdered sugar and served with whipped butter and hot tropical syrup.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Blueberry Pancakes</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">8.50</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Pancakes filled with blueberries and dusted with powdered sugar. Served with whipped butter and blueberry compote.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Banana Pancakes</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">7.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Pancakes filled with diced bananas and dusted with powdered sugar. Served with whipped butter and hot tropical syrup.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Potato Pancakes</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">8.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Served with sour cream and cinnamon applesauce.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Swedish Pancakes</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">8.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Authentic lacy Swedish pancakes served with lingonberries from Sweden.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Sourdough Pancakes</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">8.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">The favorite of the Klondike gold rush! Served with whipped butter.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Bacon Pancakes</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">8.50</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Pancakes with real bits of our hickory bacon. Served with whipped butter.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">49er Flapjacks</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">8.75</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">From the Mother Lode country. Plate sized, chewy tender flapjacks served with whipped butter.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Dollar Pancakes</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">7.50</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Twelve delicious silver dollar pancakes. Served with whipped butter.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Buckwheat Pancakes</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">7.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Served with whipped butter.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Coconut Pancakes</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">8.50</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Filled and topped with toasted coconut. Dusted with powdered sugar. Served with whipped butter and hot tropical syrup.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">2 x 4</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">8.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Four buttermilk pancakes and two eggs, any style. Served with whipped butter.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Three Little Pigs in a Blanket</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">8.50</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our special link sausages wrapped in light buttermilk pancakes and dusted with powdered sugar. Served with whipped butter and hot tropical syrup.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Sourdough French Toast</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">8.25</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Golden brown, light and fluffy. Dusted with powdered sugar. Served with whipped butter and preserves.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+    <% end %>
   </div>
+</div>
 </div>

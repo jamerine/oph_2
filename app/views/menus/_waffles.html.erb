@@ -5,120 +5,31 @@
         <h2 class="display-3">WAFFLES</h2>
     </div>
   </div> -->
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-md-6 offset-md-3">
-        <h2 class="h2-dark menu-section-title">WAFFLES</h2>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-6 offset-md-3">
+          <h2 class="h2-dark menu-section-title">WAFFLES</h2>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="container menu-collection">
-    <div class="row">
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Plain Waffle</h4>
+    <div class="container menu-collection">
+      <div class="row">
+        <% products.each do |product| %>
+          <div class="col-12 col-md-6 col-lg-4 menu-item">
+            <div class="row">
+              <div class="col-9">
+                <h4 class="menu-item-title"> <%= product.name %> </h4>
+              </div>
+              <div class="col-3">
+                <h4 class="menu-item-price"><%= number_to_currency(product.price) %></h4>
+              </div>
+              <div class="col-12">
+                <p class="menu-item-description"><%= product.long_description %></p>
+              </div>
+            </div>
           </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">7.50</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our golden brown waffle, lightly dusted with powdered sugar. Served with whipped butter.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Pecan Waffle</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">8.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our golden brown waffle, filled and topped with fresh toasted pecans, dusted with powdered sugar. Served with whipped butter and hot tropical syrup.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Fresh Fruit Waffle</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">10.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our golden brown waffle, lightly dusted with powdered sugar then topped with fresh berries of the season and pure whipped cream made fresh with Supreme Pure Vanilla from Lyons®.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Apple Waffle</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">8.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our golden brown waffle, filled with Granny Smith apples topped with pure Sinkiang cinnamon sugar. Served with whipped butter and hot homemade apple syrup.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Blueberry Waffle</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">7.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our golden brown waffle, filled with delicious blueberries and lightly dusted with powdered sugar. Served with whipped butter and warm blueberry compote.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Bacon Waffle</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">9.25</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our golden brown waffle, baked with real bits of bacon. Served with whipped butter.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Michelle's Waffle Dream</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">13.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our golden brown waffle, lightly dusted with powdered sugar. Served with whipped butter and warm syrup plus two eggs, any style and two pieces of Daily’s® bacon. Waffle upgrade available for 1.50.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Coconut Waffle</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">7.95</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our golden brown waffle, filled and topped with toasted coconut and lightly dusted with powdered sugar. Served with whipped butter and hot tropical syrup.</p>
-          </div>
-        </div>
+        <% end %>
       </div>
     </div>
-  </div>
 </div>

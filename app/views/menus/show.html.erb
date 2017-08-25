@@ -1,8 +1,8 @@
 <%= render 'menu_title' %>
-<%= render 'crepes' %>
-<%= render 'specials' %>
-<%= render 'pancakes' %>
-<%= render 'omelettes' %>
-<%= render 'waffles' %>
-<%= render 'kids_menu' %>
-<%= render 'egg_specialties' %>
+<%= render partial: 'crepes', locals: { products: @products.where(product_type: 'crepes') } %>
+<%= render partial: 'specialties', locals: { products: @products.where(product_type: 'specialties') } %>
+<%= render partial: 'pancakes', locals: { products: @products.where(product_type: 'pancakes') }  %>
+<%= render partial: 'omelettes', locals: { products: @products.where(product_type: 'omelettes') }  %>
+<%= render partial: 'waffles', locals: { products: @products.where(product_type: 'waffles') }   %>
+<%= render partial: 'kids', locals: { products: @products.where(product_type: 'kids') }   %>
+<%= render partial: 'egg_specialties', locals: { products: @products.where(product_type: 'egg_specialties') }   %>

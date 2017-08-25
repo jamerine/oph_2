@@ -1,98 +1,35 @@
-<div class="menu-section" id="menu-section">
+  <div class="menu-section" id="menu-section">
 
-  <!-- <div class="container d-flex h-100 justify-content-center">
-    <div class="row align-self-center text-center">
-        <h2 class="display-3">OVEN BAKED OMELETTES</h2>
-    </div>
-  </div> -->
-  <div class="container">
-    <div class="row text-center">
-      <div class="col-md-6 offset-md-3">
-        <h2 class="h2-dark menu-section-title">OUR FAMOUS OVEN-BAKED OMELETTES</h2>
+    <!-- <div class="container d-flex h-100 justify-content-center">
+      <div class="row align-self-center text-center">
+          <h2 class="display-3">OVEN BAKED OMELETTES</h2>
+      </div>
+    </div> -->
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-6 offset-md-3">
+          <h2 class="h2-dark menu-section-title">OUR FAMOUS OVEN-BAKED OMELETTES</h2>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="container menu-collection">
+    <div class="container menu-collection">
     <div class="row">
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Cheese Omelette</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">10.25</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our fluffy omelette filled with aged cheddar cheese.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Fresh Veggies Omelette</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">12.50</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our fluffy omelette filled with fresh broccoli, fresh tomatoes, fresh mushrooms and aged cheddar cheese.</p>
+      <% products.each do |product| %>
+        <div class="col-12 col-md-6 col-lg-4 menu-item">
+          <div class="row">
+            <div class="col-9">
+              <h4 class="menu-item-title"> <%= product.name %> </h4>
+            </div>
+            <div class="col-3">
+              <h4 class="menu-item-price"><%= number_to_currency(product.price) %></h4>
+            </div>
+            <div class="col-12">
+              <p class="menu-item-description"><%= product.long_description %></p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Bacon and White Cheddar Cheese Omelette</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">11.50</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our fluffy omelette filled with thick sliced bacon and extra sharp aged white cheddar cheese.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Ham and Cheese Omelette</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">11.50</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our fluffy omelette filled with diced sugar cured hickory smoked ham and aged cheddar cheese.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Irish Omelette</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">12.75</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our fluffy omelette filled with our homemade hash, a blend of kosher corned beef, potatoes, onions, and aged cheddar cheese.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 menu-item">
-        <div class="row">
-          <div class="col-9">
-            <h4 class="menu-item-title">Mushroom Omelette</h4>
-          </div>
-          <div class="col-3">
-            <h4 class="menu-item-price">11.75</h4>
-          </div>
-          <div class="col-12">
-            <p class="menu-item-description">Our fluffy omelette filled with fresh mushrooms and topped with a rich mushroom sherry sauce.</p>
-          </div>
-        </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </div>
