@@ -74,3 +74,7 @@ Product.create(name: "Canadian Bacon and Eggs", price: 9.95, short_description: 
 Product.create(name: "Ham and Eggs", price: 9.95, short_description: "A thick slice of sugar cured, hickory smoked ham and two large fresh eggs, any style.", long_description: "A thick slice of sugar cured, hickory smoked ham and two large fresh eggs, any style.", in_store_item: true, online_order_item: true, product_type: "egg_specialties", active: true)
 Product.create(name: "Minced Ham and Scrambled Eggs", price: 9.95, short_description: "Three eggs lightly scrambled with diced sugar cured, hickory smoked ham.", long_description: "Three eggs lightly scrambled with diced sugar cured, hickory smoked ham.", in_store_item: true, online_order_item: true, product_type: "egg_specialties", active: true)
 Product.create(name: "Hash Browns and Eggs", price: 9.50, short_description: "Hash browns and two large fresh eggs, any style.", long_description: "Hash browns and two large fresh eggs, any style.", in_store_item: true, online_order_item: true, product_type: "egg_specialties", active: true)
+
+
+# Users
+ # user = User.create(first_name: "Jason", last_name: "Amerine", email: "amerine.19@gmail.com", password: "TheBestPassword", password_confirmation: "TheBestPassword", role: 0)

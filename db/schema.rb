@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170824140305) do
+ActiveRecord::Schema.define(version: 20170825150506) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,8 +43,6 @@ ActiveRecord::Schema.define(version: 20170824140305) do
     t.string "long_description"
     t.boolean "in_store_item"
     t.boolean "online_order_item"
-    t.integer "product_type"
-    t.boolean "active"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -57,6 +55,17 @@ ActiveRecord::Schema.define(version: 20170824140305) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "review_url"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.integer "role"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "password_digest"
+    t.index ["email"], name: "index_users_on_email", unique: true
   end
 
 end

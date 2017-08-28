@@ -1,0 +1,33 @@
+<%= render 'user_title' %>
+  <div class="container ">
+
+    <div class="jumbotron jumbotron-white">
+
+
+    <%= form_for(@user, url: signup_path) do |f| %>
+      <%= render 'shared/error_messages' %>
+      <div class="row">
+
+        <div class="col-6 offset-3">
+          <h3>Create New User</h3>
+            <%= f.text_field :first_name, autofocus: true, class: "form-control text-center", placeholder: "First Name" %>
+
+            <%= f.text_field :last_name, class: "form-control text-center", placeholder: "Last Name"  %>
+
+            <%= f.text_field :email, class: "form-control text-center", placeholder: "Email"%>
+
+            <%= f.password_field :password, class: "form-control text-center", placeholder: "Password" %>
+
+            <%= f.password_field :password_confirmation, class: "form-control text-center", placeholder: "Password Confirmation" %>
+        </div>
+
+      </div>
+
+      <div class="actions text-center">
+        <%= f.submit "SUBMIT", class: 'btn btn-primary btn-comment-submit' %>
+      </div>
+
+      <% end %>
+    </div>
+
+  </div>

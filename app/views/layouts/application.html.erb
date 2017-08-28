@@ -146,10 +146,9 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <%= render 'layouts/navbar' %>
-
     <%= yield %>
 
     <%= render 'layouts/footer' %>
-
+    <%= debug(params) if Rails.env.development? %>
   </body>
 </html>
