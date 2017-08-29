@@ -97,4 +97,11 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 
+
+  # Custom Method Area
+  
+  def is_logged_in?
+    !session[:user_id].nil?
+  end
+
 end
