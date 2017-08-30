@@ -3,7 +3,10 @@
     <div class="col-md-6">
         <div class="d-flex h-100 justify-content-center">
           <div class="row align-self-center text-center">
-          <%= link_to 'Continue As Guest', '', class:'btn btn-primary btn-log-in' %>
+            <%= form_for(:session, url: login_path, method: 'post') do |f| %>
+              <%= f.hidden_field :guest, value: 'true' %>
+              <%= f.submit "Sign in as guest", class: "btn btn-primary btn-log-in" %>
+            <% end %>
           </div>
         </div>
 

@@ -13,14 +13,13 @@ RSpec.describe "UsersLogins", type: :request do
 
   describe "POST #create" do
 
-
     context "login with invalid information" do
       it "should not work and should go back to the login form" do
         get login_path
         expect(response).to render_template(:new)
         post login_path, params: { session: {
           email:                "",
-          password:             "",
+          password:             ""
         } }
         expect(response).to render_template(:new)
         expect(flash).to_not be(nil)
@@ -54,7 +53,7 @@ RSpec.describe "UsersLogins", type: :request do
         get login_path
         post login_path, params: { session: {
           email:                user.email,
-          password:             user.password,
+          password:             user.password
         } }
         expect(is_logged_in?).to be_truthy
 
@@ -70,8 +69,9 @@ RSpec.describe "UsersLogins", type: :request do
       end
     end
 
+
+
+
+
   end
-
-
-
 end

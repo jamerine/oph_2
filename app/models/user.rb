@@ -1,6 +1,6 @@
 class User < ApplicationRecord
 
-  enum role: [:admin, :customer]
+  enum role: [:admin, :customer, :guest]
 
   before_save { self.email = email.downcase }
   before_save { self.first_name = first_name.titleize }
