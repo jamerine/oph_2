@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="jumbotron">
+
+    <div class="row">
+      <div class="col-4">
+        <%= link_to 'Back', :back, class:'btn btn-primary' %>
+      </div>
+      <div class="col-4 text-center">
+        <h2>OPH Online Pickup Ordering</h2>
+        <%= link_to 'Return to Website', root_path %>
+      </div>
+      <div class="col-4 text-right">
+        <%= render partial: 'api/v1/shared/cart_text' %>
+      </div>
+    </div>
+  </div>
+</div>

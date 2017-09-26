@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get 'sessions/new'
 
   get 'users/new'
@@ -28,12 +29,25 @@ Rails.application.routes.draw do
 
   resources :products
 
+  namespace :api do
+    namespace :v1 do
+      resource :cart, only: [:show]
+      resources :order_items, only: [:create, :update, :destroy, :new]
+      resources :products, only: [:index]
+    end
+  end
+
+
+
   get '/signup', to: 'users#new'
   post '/signup', to: 'users#create'
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
   resources :users
+
+
+
 
   # get 'menu', to: :index, controller: 'menus'
   #

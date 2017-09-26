@@ -18,11 +18,12 @@
           </div>
           <div class="row justify-content-center footer-copyright">
             <p>© 2017 - Website Designed by <%= link_to 'Dittoh, LLC', 'http://dittoh.com', class: 'dittoh-link' %></a>, All Rights Reserved.</p>
-            <% if logged_in? %>
+            <!-- <% if logged_in? %>
               <%= link_to "Log out", logout_path, method: :delete %>
             <% else %>
               <%= link_to "Log in", login_path %>
-            <% end %>
+            <% end %> -->
+            <%= link_to 'online menu', api_v1_products_path %>
           </div>
         </div>
         <div class="col-md-4 col-sm-12 footer-description">

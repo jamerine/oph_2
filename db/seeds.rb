@@ -78,3 +78,9 @@ Product.create(name: "Hash Browns and Eggs", price: 9.50, short_description: "Ha
 
 # Users
  # user = User.create(first_name: "Jason", last_name: "Amerine", email: "amerine.19@gmail.com", password: "TheBestPassword", password_confirmation: "TheBestPassword", role: 0)
+
+ OrderStatus.delete_all
+ OrderStatus.create! id: 1, name: "In Progress"
+ OrderStatus.create! id: 2, name: "Placed"
+ OrderStatus.create! id: 3, name: "Completed"
+ OrderStatus.create! id: 4, name: "Cancelled"

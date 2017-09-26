@@ -1,3 +1,4 @@
+<%= render 'layouts/navbar' %>
 <%= render 'menu_title' %>
 <%= render partial: 'crepes', locals: { products: @products.where(product_type: 'crepes') } %>
 <%= render partial: 'specialties', locals: { products: @products.where(product_type: 'specialties') } %>
@@ -6,3 +7,4 @@
 <%= render partial: 'waffles', locals: { products: @products.where(product_type: 'waffles') }   %>
 <%= render partial: 'kids', locals: { products: @products.where(product_type: 'kids') }   %>
 <%= render partial: 'egg_specialties', locals: { products: @products.where(product_type: 'egg_specialties') }   %>
+<%= render 'layouts/footer' %>
