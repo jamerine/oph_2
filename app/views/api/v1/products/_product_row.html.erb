@@ -1,17 +1,24 @@
-<div class="row">
-  <div class="col-8">
-    <h4><%= product.name %></small></h4>
+<li class="list-group-item">
+
+
+<%= form_for @order_item, url: api_v1_order_items_path, remote: true do |f| %>
+  <div class="row">
+    <div class="col-10">
+      <h4 class="menu-item-title"> <%= product.name %> </h4>
+    </div>
+    <div class="col-2 text-right">
+      <h4 class="menu-item-price"><%= number_to_currency(product.price) %></h4>
+    </div>
+    <div class="col-10">
+      <p class="menu-item-description"><%= product.short_description %></p>
+    </div>
+    <div class="col-2">
+      <%= f.hidden_field :product_id, value: product.id %>
+      <%= f.hidden_field :quantity, value: 1 %>
+
+      <%= f.submit "Add to Cart", class: "btn btn-primary" %>
+    </div>
   </div>
-  <div class="col-4">
-    <%= form_for @order_item, url: api_v1_order_items_path, remote: true do |f| %>
-      <h4 class="text-right">Unit Price: <span style="color: green"><%= number_to_currency product.price %></span></h4>
-        <div class="input-group">
-          <%= f.number_field :quantity, value: 1, class: "form-control", min: 1 %>
-          <div class="input-group-btn">
-            <%= f.hidden_field :product_id, value: product.id %>
-            <%= f.submit "Add to Cart", class: "btn btn-primary" %>
-          </div>
-        </div>
-    <% end %>
-  </div>
-</div>
+<% end %>
+
+</li>

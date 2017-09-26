@@ -1,5 +1,7 @@
 <% if @order_item.errors.any? %>
 alert("Order Errors")
 <% else %>
-  $(".cart-text").html("<%= escape_javascript(render 'api/v1/shared/cart_text') %>")
+  $(".cart-text").html("<%= escape_javascript(render 'api/v1/shared/cart_text', notice: 'item added') %>")
+  $(".flash").html("<%= escape_javascript(render :partial => 'success') %>")
+
 <% end %>

@@ -1,11 +1,29 @@
 <%= render partial: 'api/v1/shared/order_app_header' %>
-
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <% @products.each do |product| %>
-          <%= render "product_row", product: product, order_item: @order_item %>
-      <% end %>
+<div class="flash" id="flash">
+  <% if flash[:notice] %>
+    <div class="alert alert-success">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <%= flash[:notice] %>
     </div>
-  </div>
+  <% elsif flash.now[:error] %>
+    <div class="alert alert-danger">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <%= flash.now[:error] %>
+    </div>
+  <% elsif flash[:alert] %>
+    <div class="alert alert-warning">
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+      <%= flash[:alert] %>
+    </div>
+  <% end %>
 </div>
+<% @product_types.each do |product_type| %>
+  <%= render "product_type_title", product_type: product_type %>
+  <div class="container">
+    <ul class="list-group">
+    <% @products.where(product_type: product_type).each do |product| %>
+        <%= render "product_row", product: product, order_item: @order_item %>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
