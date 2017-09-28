@@ -1,10 +1,12 @@
-class Api::V1::OrderItemsController < ApplicationController
+class Api::V1::OrderItemsController < Api::V1::ApiController
 
   def create
-    @order = current_order
-    @order_item = @order.order_items.new(order_item_params)
-    @order.save
-    session[:order_id] = @order.id
+    @order_item = OrderItem.new(order_item_params)
+    if @order_item.save
+      render json: @order_item
+    else
+      render json: @order_item.errors, status: :unprocessable_entity
+    end
   end
 
   def update
@@ -24,6 +26,6 @@ class Api::V1::OrderItemsController < ApplicationController
 private
 
   def order_item_params
-    params.require(:order_item).permit(:quantity, :product_id)
+    params.require(:order_item).permit(:quantity, :product_id, :order_id)
   end
 end

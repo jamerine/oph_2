@@ -5,16 +5,13 @@ class ApplicationController < ActionController::Base
 
   def current_order
     if !session[:order_id].nil?
-      Order.find(session[:order_id])
+      @order = Order.find(session[:order_id])
     else
-      Order.new
+      @order = Order.create
+      session[:order_id] = @order.id
     end
+    return @order
   end
 
-  def respond_modal_with(*args, &blk)
-   options = args.extract_options!
-   options[:responder] = ModalResponder
-   respond_with *args, options, &blk
- end
- 
+
 end

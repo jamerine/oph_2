@@ -54,10 +54,10 @@ gem 'sitemap_generator'
 gem 'heroku-deflater', :group => :production
 
 # Image Manipulation
-gem "mini_magick"
+gem 'mini_magick'
 
 # Gem for React
-gem 'react_on_rails', '~> 9.0.1'
+gem 'react-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
