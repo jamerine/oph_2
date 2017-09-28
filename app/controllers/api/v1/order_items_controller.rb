@@ -21,7 +21,7 @@ class Api::V1::OrderItemsController < Api::V1::ApiController
     if @order_item.destroy
       render json: {}
     else
-      render json: {}, status: :unprocessable_entity
+      render json: @order_item.errors, status: :unprocessable_entity
     end
   end
 

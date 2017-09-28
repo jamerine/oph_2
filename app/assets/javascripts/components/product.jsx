@@ -2,18 +2,32 @@ var Product = React.createClass({
   getInitialState() {
     return {
       product: this.props.product,
-      order_item: {
+      order: this.props.order,
+      orderItem: {
         product_id: this.props.product.id,
-        order_id: null,
+        order_id: this.props.order.id,
         quantity: 1,
       }
     }
   },
 
-  handleAddButton() {
+  handleClick() {
     var product =  this.state.product;
-    this.props.onButtonClick(this.props.product);
+    var orderItem = this.state.orderItem
+    $.ajax({
+      url: `/api/v1/order_items`,
+      type: 'POST',
+      data: { order_item: orderItem },
+      success: ( orderItem ) => {
+        this.props.handleAddOrderItem(orderItem);
+      }
+    });
   },
+
+  // handleAddButton() {
+  //   var product =  this.state.product;
+  //   this.props.onButtonClick(this.props.product);
+  // },
 
   render: function() {
     return (
@@ -24,7 +38,7 @@ var Product = React.createClass({
           </div>
           <div className="col-2 text-right">
             <h4 className="menu-item-price">{this.state.product.price}</h4>
-            <button onClick={this.handleAddButton} className='btn btn-sm btn-success'>Add</button>
+            <button onClick={this.handleClick} className='btn btn-sm btn-success'>Add</button>
           </div>
 
       </div>

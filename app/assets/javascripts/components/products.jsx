@@ -8,31 +8,27 @@ var Products = React.createClass({
     }
   },
 
-  handleAddButton: function(obj) {
-    var product = obj;
-    var order_item = {
-      product_id: product.id,
-      quantity: 1,
-      order_id: this.state.order.id
-    };
-    $.post('/api/v1/order_items',
-          {order_item: order_item}).done(function(data) {
-              this.addNewOrderItem(data);
-            }.bind(this));
+  findOrderItemsSum(orderItems) {
+    var sum = 0;
+    for (var i = 0; i < orderItems.length; i++) {
+      sum += parseFloat(orderItems[i].total_price);
+    }
+    return sum;
   },
 
-
-  addNewOrderItem: function(orderItem) {
+  handleAddOrderItem(orderItem) {
     var orderItemsList = React.addons.update(this.state.orderItems, { $push: [orderItem]});
+    var order = this.state.order;
+    order.subtotal = this.findOrderItemsSum(orderItemsList);
     this.setState({
-     orderItems: orderItemsList
+     orderItems: orderItemsList,
+     order: order
     });
   },
 
   handleDeleteButton: function(obj) {
     var orderItem = obj;
     var currentOrderItems = this.state.orderItems;
-    console.log(this.state.orderItems);
     $.ajax({
       url: `/api/v1/order_items/${orderItem.id}`,
       type: 'DELETE',
@@ -46,8 +42,12 @@ var Products = React.createClass({
     var newOrderItems = this.state.orderItems.filter((orderItem) => {
       return orderItem.id != id;
     });
-
-    this.setState({ orderItems: newOrderItems });
+    var order = this.state.order;
+    order.subtotal = this.findOrderItemsSum(newOrderItems);
+    this.setState({
+      orderItems: newOrderItems,
+      order: order
+     });
   },
 
 
@@ -59,12 +59,13 @@ var Products = React.createClass({
       if (product.product_type !== lastProductType) {
         productRows.push(<ProductTypeRow productType={product.product_type} key={product.product_type}/>)
       }
-      productRows.push(<Product product={product} key={product.id} onButtonClick={this.handleAddButton} />)
+      productRows.push(<Product product={product} order={this.state.order} key={product.id} handleAddOrderItem={this.handleAddOrderItem} />)
       lastProductType = product.product_type
     })
     this.state.orderItems.forEach((orderItem) => {
       orderItemsRows.push(<OrderItem order={this.state.order} orderItem={orderItem} key={orderItem.id} onDeleteButtonClick={this.handleDeleteButton}/>)
     })
+
 
     return (
     <div>
