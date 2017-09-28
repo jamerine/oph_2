@@ -8,7 +8,7 @@ var Products = React.createClass({
     }
   },
 
-  handleButton: function(obj) {
+  handleAddButton: function(obj) {
     var product = obj;
     var order_item = {
       product_id: product.id,
@@ -21,12 +21,35 @@ var Products = React.createClass({
             }.bind(this));
   },
 
+
   addNewOrderItem: function(orderItem) {
     var orderItemsList = React.addons.update(this.state.orderItems, { $push: [orderItem]});
     this.setState({
      orderItems: orderItemsList
     });
   },
+
+  handleDeleteButton: function(obj) {
+    var orderItem = obj;
+    var currentOrderItems = this.state.orderItems;
+    console.log(this.state.orderItems);
+    $.ajax({
+      url: `/api/v1/order_items/${orderItem.id}`,
+      type: 'DELETE',
+      success:() => {
+        this.removeItemClient(orderItem.id);
+      }
+    });
+  },
+
+  removeItemClient(id) {
+    var newOrderItems = this.state.orderItems.filter((orderItem) => {
+      return orderItem.id != id;
+    });
+
+    this.setState({ orderItems: newOrderItems });
+  },
+
 
   render: function() {
     var productRows = [];
@@ -36,11 +59,11 @@ var Products = React.createClass({
       if (product.product_type !== lastProductType) {
         productRows.push(<ProductTypeRow productType={product.product_type} key={product.product_type}/>)
       }
-      productRows.push(<Product product={product} key={product.id} onButtonClick={this.handleButton} />)
+      productRows.push(<Product product={product} key={product.id} onButtonClick={this.handleAddButton} />)
       lastProductType = product.product_type
     })
     this.state.orderItems.forEach((orderItem) => {
-      orderItemsRows.push(<OrderItem order={this.state.order} orderItem={orderItem} key={orderItem.id}/>)
+      orderItemsRows.push(<OrderItem order={this.state.order} orderItem={orderItem} key={orderItem.id} onDeleteButtonClick={this.handleDeleteButton}/>)
     })
 
     return (

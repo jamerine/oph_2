@@ -17,10 +17,12 @@ class Api::V1::OrderItemsController < Api::V1::ApiController
   end
 
   def destroy
-    @order = current_order
-    @order_item = @order.order_items.find(params[:id])
-    @order_item.destroy
-    @order_items = @order.order_items
+    @order_item = OrderItem.find(params[:id])
+    if @order_item.destroy
+      render json: {}
+    else
+      render json: {}, status: :unprocessable_entity
+    end
   end
 
 private

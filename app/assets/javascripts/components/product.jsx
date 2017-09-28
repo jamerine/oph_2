@@ -10,7 +10,7 @@ var Product = React.createClass({
     }
   },
 
-  handleButton() {
+  handleAddButton() {
     var product =  this.state.product;
     this.props.onButtonClick(this.props.product);
   },
@@ -24,7 +24,7 @@ var Product = React.createClass({
           </div>
           <div className="col-2 text-right">
             <h4 className="menu-item-price">{this.state.product.price}</h4>
-            <button onClick={this.handleButton} className='btn btn-sm btn-success'>Add</button>
+            <button onClick={this.handleAddButton} className='btn btn-sm btn-success'>Add</button>
           </div>
 
       </div>
